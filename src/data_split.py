@@ -4,6 +4,7 @@ from pathlib import Path
 from collections import defaultdict
 from sklearn.model_selection import train_test_split
 
+
 def stratified_split(
         annotations_path: Path,
         images_dir: Path,
@@ -14,7 +15,6 @@ def stratified_split(
     with open(annotations_path) as f:
         coco = json.load(f)
 
-    # Dominant class per image
     anns_by_img = defaultdict(list)
     for ann in coco["annotations"]:
         anns_by_img[ann["image_id"]].append(ann["category_id"])
@@ -27,14 +27,22 @@ def stratified_split(
         label = max(set(cats), key=cats.count) if cats else -1
         labels.append(label)
 
+    # Классы с одним изображением — убираем из стратификации, кидаем в train
+    from collections import Counter
+    label_counts = Counter(labels)
+
+    rare_ids = [img_id for img_id, label in zip(image_ids, labels) if label_counts[label] < 2]
+    strat_ids = [img_id for img_id, label in zip(image_ids, labels) if label_counts[label] >= 2]
+    strat_labels = [label for img_id, label in zip(image_ids, labels) if label_counts[label] >= 2]
+
     train_ids, val_ids = train_test_split(
-        image_ids,
+        strat_ids,
         test_size=val_size,
-        stratify=labels,
+        stratify=strat_labels,
         random_state=seed,
     )
 
-    train_ids = set(train_ids)
+    train_ids = set(train_ids) | set(rare_ids)
     val_ids = set(val_ids)
 
     def build_split(split_ids, split_name):
@@ -49,7 +57,7 @@ def stratified_split(
         for img in split_images:
             src = images_dir / img["file_name"]
             dst = out_img_dir / img["file_name"]
-            if src.exists():
+            if src.exists() and src.resolve() != dst.resolve():
                 shutil.copy2(src, dst)
 
         split_coco = {
@@ -64,12 +72,3 @@ def stratified_split(
 
     build_split(train_ids, "train")
     build_split(val_ids, "val")
-
-
-stratified_split(
-    annotations_path=Path("data/train/annotations.json"),
-    images_dir=Path("data/train/images"),
-    output_dir=Path("data"),
-    val_size=0.15,
-    seed=42,
-)

@@ -91,12 +91,3 @@ def oversample_rare_classes(
 
     print(f"Original images: {len(coco['images'])}")
     print(f"After oversampling: {len(new_images)}")
-
-
-oversample_rare_classes(
-    annotations_path=Path("data/train/annotations.json"),
-    images_dir=Path("data/train/images"),
-    output_dir=Path("data/train_balanced"),
-    min_annotations=50,
-    seed=42,
-)
