@@ -8,6 +8,7 @@ dependencies = [
     "pycocotools>=2.0.11",
     "Pillow>=10.0",
     "scikit-learn>=1.8.0",
+    "ensemble-boxes>=1.0.9",
 ]
 
 [project.scripts]
