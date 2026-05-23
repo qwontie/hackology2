@@ -290,3 +290,13 @@ cython_debug/
 # Local cache
 data_probe/
 probe_predict_local.py
+
+# Weights downloaded from vast — uploaded as GitHub Release assets
+_weights/
+
+# Vast snapshot exclusions
+vast_snapshot/yolo-distiller/runs/
+vast_snapshot/yolo-distiller/ultralytics.egg-info/
+
+# Preserve training/eval logs that we backed up from vast
+!vast_snapshot/**/*.log

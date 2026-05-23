@@ -1,0 +1,85 @@
+================================================================================
+config                                   metrics                                 
+--------------------------------------------------------------------------------
+Ultralytics 8.3.24 🚀 Python-3.12.13 torch-2.11.0+cu126 CUDA:0 (NVIDIA H100 80GB HBM3, 81110MiB)
+YOLO11x summary (fused): 464 layers, 57,253,219 parameters, 0 gradients, 196.8 GFLOPs
+[34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s][34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s]
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/4e60bb5d-ae5c-4ee5-a251-e4c6fa6c43fb.jpg: 10 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/72adda18-5f3a-45c1-89f3-da7b5b4e4ce8.jpg: 18 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/fa4c0f08-a7d6-4293-8f49-dd1ffa73bcdd.jpg: 13 duplicate labels removed
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/13 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   8%|▊         | 1/13 [00:01<00:21,  1.75s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  15%|█▌        | 2/13 [00:03<00:18,  1.67s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  23%|██▎       | 3/13 [00:04<00:16,  1.62s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  31%|███       | 4/13 [00:05<00:09,  1.02s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 5/13 [00:05<00:05,  1.43it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  46%|████▌     | 6/13 [00:05<00:03,  2.00it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  54%|█████▍    | 7/13 [00:05<00:02,  2.66it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▏   | 8/13 [00:05<00:01,  3.40it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  69%|██████▉   | 9/13 [00:05<00:00,  4.18it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  77%|███████▋  | 10/13 [00:05<00:00,  4.96it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  85%|████████▍ | 11/13 [00:05<00:00,  5.68it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  92%|█████████▏| 12/13 [00:06<00:00,  5.91it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:06<00:00,  4.14it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:06<00:00,  2.02it/s]
+                   all        150       2240      0.858      0.833      0.925      0.798
+Speed: 0.2ms preprocess, 40.5ms inference, 0.0ms loss, 0.8ms postprocess per image
+teacher_x @1536 (full val)               mAP50=0.9253  mAP50-95=0.7980  mP=0.8578  mR=0.8332
+Ultralytics 8.3.24 🚀 Python-3.12.13 torch-2.11.0+cu126 CUDA:0 (NVIDIA H100 80GB HBM3, 81110MiB)
+YOLO11m summary (fused): 303 layers, 20,314,531 parameters, 0 gradients, 69.2 GFLOPs
+[34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s][34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s]
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/4e60bb5d-ae5c-4ee5-a251-e4c6fa6c43fb.jpg: 10 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/72adda18-5f3a-45c1-89f3-da7b5b4e4ce8.jpg: 18 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/fa4c0f08-a7d6-4293-8f49-dd1ffa73bcdd.jpg: 13 duplicate labels removed
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/13 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   8%|▊         | 1/13 [00:01<00:20,  1.71s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  15%|█▌        | 2/13 [00:03<00:18,  1.66s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  23%|██▎       | 3/13 [00:04<00:16,  1.61s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 5/13 [00:05<00:05,  1.36it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  54%|█████▍    | 7/13 [00:05<00:02,  2.30it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  69%|██████▉   | 9/13 [00:05<00:01,  3.43it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  85%|████████▍ | 11/13 [00:05<00:00,  4.75it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:06<00:00,  3.71it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:06<00:00,  2.11it/s]
+                   all        150       2240       0.81      0.841        0.9      0.768
+Speed: 0.1ms preprocess, 39.5ms inference, 0.0ms loss, 0.4ms postprocess per image
+student_m @1536 (full val)               mAP50=0.9002  mAP50-95=0.7676  mP=0.8103  mR=0.8410
+  delta student-teacher                  -0.0251
+--------------------------------------------------------------------------------
+Ultralytics 8.3.24 🚀 Python-3.12.13 torch-2.11.0+cu126 CUDA:0 (NVIDIA H100 80GB HBM3, 81110MiB)
+YOLO11x summary (fused): 464 layers, 57,253,219 parameters, 0 gradients, 196.8 GFLOPs
+[34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s][34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s]
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/4e60bb5d-ae5c-4ee5-a251-e4c6fa6c43fb.jpg: 10 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/72adda18-5f3a-45c1-89f3-da7b5b4e4ce8.jpg: 18 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/fa4c0f08-a7d6-4293-8f49-dd1ffa73bcdd.jpg: 13 duplicate labels removed
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/13 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   8%|▊         | 1/13 [00:01<00:12,  1.03s/it]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  15%|█▌        | 2/13 [00:01<00:05,  1.95it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  23%|██▎       | 3/13 [00:01<00:03,  3.00it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  31%|███       | 4/13 [00:01<00:02,  3.69it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 5/13 [00:01<00:01,  4.63it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  46%|████▌     | 6/13 [00:01<00:01,  5.45it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  54%|█████▍    | 7/13 [00:01<00:00,  6.15it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▏   | 8/13 [00:01<00:00,  6.55it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  69%|██████▉   | 9/13 [00:02<00:00,  6.67it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  77%|███████▋  | 10/13 [00:02<00:00,  6.86it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  85%|████████▍ | 11/13 [00:02<00:00,  7.29it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  92%|█████████▏| 12/13 [00:02<00:00,  7.60it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:02<00:00,  5.05it/s]
+                   all        150       2240      0.858      0.833      0.925      0.798
+Speed: 0.3ms preprocess, 9.1ms inference, 0.0ms loss, 0.4ms postprocess per image
+teacher_x @1536 (DPR_MIR val)            mAP50=0.9253  mAP50-95=0.7980  mP=0.8578  mR=0.8332
+Ultralytics 8.3.24 🚀 Python-3.12.13 torch-2.11.0+cu126 CUDA:0 (NVIDIA H100 80GB HBM3, 81110MiB)
+YOLO11m summary (fused): 303 layers, 20,314,531 parameters, 0 gradients, 69.2 GFLOPs
+[34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s][34m[1mval: [0mScanning /workspace/v1/data3/data/train/labels.cache... 150 images, 0 backgrounds, 0 corrupt: 100%|██████████| 150/150 [00:00<?, ?it/s]
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/4e60bb5d-ae5c-4ee5-a251-e4c6fa6c43fb.jpg: 10 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/72adda18-5f3a-45c1-89f3-da7b5b4e4ce8.jpg: 18 duplicate labels removed
+[34m[1mval: [0mWARNING ⚠️ /workspace/v1/data3/data/train/images/fa4c0f08-a7d6-4293-8f49-dd1ffa73bcdd.jpg: 13 duplicate labels removed
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/13 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   8%|▊         | 1/13 [00:00<00:11,  1.01it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  23%|██▎       | 3/13 [00:01<00:03,  3.21it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 5/13 [00:01<00:01,  5.35it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  54%|█████▍    | 7/13 [00:01<00:00,  7.09it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  69%|██████▉   | 9/13 [00:01<00:00,  8.55it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  85%|████████▍ | 11/13 [00:01<00:00, 10.12it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 13/13 [00:01<00:00,  7.15it/s]
+                   all        150       2240       0.81      0.841        0.9      0.768
+Speed: 0.1ms preprocess, 4.5ms inference, 0.0ms loss, 0.5ms postprocess per image
+student_m @1536 (DPR_MIR val)            mAP50=0.9002  mAP50-95=0.7676  mP=0.8103  mR=0.8410
+  delta student-teacher (DPR)            -0.0251
+================================================================================
+Exception in thread Thread-7 (_pin_memory_loop):
+Traceback (most recent call last):
+  File "/venv/main/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/venv/main/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/venv/main/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 52, in _pin_memory_loop
+    do_one_step()
+  File "/venv/main/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/torch/multiprocessing/reductions.py", line 540, in rebuild_storage_fd
+    fd = df.detach()
+         ^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/connection.py", line 525, in Client
+    answer_challenge(c, authkey)
+  File "/venv/main/lib/python3.12/multiprocessing/connection.py", line 953, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/connection.py", line 430, in _recv_bytes
+    buf = self._recv(4)
+          ^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/multiprocessing/connection.py", line 395, in _recv
+    chunk = read(handle, remaining)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer

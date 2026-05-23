@@ -1,0 +1,257 @@
+"""Enhanced inference: 3 modes + TTA + WBF + degenerate filter + memory-safe loop.
+
+Drop-in compatible CLI with baseline predict.py, plus new flags:
+  --mode safe|balanced|heavy   inference profile for T4 16GB/30min budget
+  --models PATH [PATH ...]     ensemble multiple weights via WBF
+  --imgsz INT                  override resolution
+  --tta-flip                   horizontal flip TTA
+  --tta-scales 1280 1536       multi-scale TTA
+  --wbf-iou FLOAT              IoU thresh for Weighted Box Fusion
+  --max-det INT                max boxes per image (300/400/500)
+
+Modes are presets that set the above flags:
+  safe:     single-scale 1280, no TTA, max_det=300   (~3 min, fits T4)
+  balanced: single-scale 1536 + hflip, max_det=400   (~10 min, fits T4)
+  heavy:    multi-scale [1280,1536,1920] + hflip + WBF, max_det=500 (~25 min, tight T4)
+
+ALWAYS filters w<1 or h<1 bboxes (eval validator rejects them — see epoch5 incident).
+"""
+from __future__ import annotations
+
+import argparse
+import gc
+import json
+import sys
+import time
+from pathlib import Path
+
+import torch
+from ultralytics import YOLO
+
+try:
+    from ensemble_boxes import weighted_boxes_fusion
+    HAS_WBF = True
+except ImportError:
+    HAS_WBF = False
+
+
+# ---------- mode presets ----------
+MODES = {
+    "safe":     {"imgsz": 1280, "flip": False, "scales": None,                 "max_det": 300},
+    "balanced": {"imgsz": 1536, "flip": True,  "scales": None,                 "max_det": 400},
+    "heavy":    {"imgsz": 1536, "flip": True,  "scales": [1280, 1536, 1920],   "max_det": 500},
+}
+
+
+# ---------- helpers ----------
+def load_taxonomy(path: Path) -> dict[int, int]:
+    """Map YOLO class index (0..N-1) -> hackathon category_id from taxonomy.json."""
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    cats = sorted(data["categories"], key=lambda c: c["id"])
+    return {i: c["id"] for i, c in enumerate(cats)}
+
+
+def load_image_id_map(annotations_path: Path) -> dict[str, int]:
+    """Map filename -> image_id from test_images.json (COCO format)."""
+    if not annotations_path.exists():
+        print(f"WARNING: {annotations_path} not found", file=sys.stderr)
+        return {}
+    data = json.loads(annotations_path.read_text(encoding="utf-8"))
+    return {img["file_name"]: img["id"] for img in data["images"]}
+
+
+def boxes_to_normalized(boxes_xyxy, img_w: int, img_h: int):
+    """xyxy in pixels -> normalized [0,1] format expected by ensemble_boxes."""
+    out = []
+    for x1, y1, x2, y2 in boxes_xyxy:
+        out.append([
+            max(0.0, min(1.0, x1 / img_w)),
+            max(0.0, min(1.0, y1 / img_h)),
+            max(0.0, min(1.0, x2 / img_w)),
+            max(0.0, min(1.0, y2 / img_h)),
+        ])
+    return out
+
+
+def predict_one_pass(model: YOLO, img_path: str, imgsz: int, conf: float,
+                     max_det: int, flip: bool, device: int = 0) -> tuple[list, list, list]:
+    """Single inference pass. If flip=True, uses ultralytics built-in TTA (augment=True).
+
+    Returns: (xyxy_list, cls_list, conf_list) in original-image pixel coords.
+    """
+    res = model.predict(source=img_path, imgsz=imgsz, conf=conf, max_det=max_det,
+                        device=device, verbose=False, half=True, augment=flip)
+    boxes = res[0].boxes
+    xyxy = boxes.xyxy.cpu().tolist() if boxes is not None else []
+    cls = boxes.cls.cpu().tolist() if boxes is not None else []
+    cf = boxes.conf.cpu().tolist() if boxes is not None else []
+    del res
+    return xyxy, cls, cf
+
+
+def wbf_merge(all_xyxy: list[list], all_cls: list[list], all_conf: list[list],
+              img_w: int, img_h: int, iou_thr: float = 0.55,
+              weights: list[float] | None = None) -> tuple[list, list, list]:
+    """Merge predictions from multiple passes/models via WBF. Returns pixel-space boxes."""
+    if not HAS_WBF:
+        # Fallback: concatenate (NMS already done per-pass by YOLO)
+        return ([b for xs in all_xyxy for b in xs],
+                [c for cs in all_cls for c in cs],
+                [c for cs in all_conf for c in cs])
+    if not any(all_xyxy):
+        return [], [], []
+
+    norm = [boxes_to_normalized(xs, img_w, img_h) for xs in all_xyxy]
+    boxes, scores, labels = weighted_boxes_fusion(
+        norm, all_conf, all_cls,
+        weights=weights, iou_thr=iou_thr, skip_box_thr=0.001,
+    )
+    # Back to pixels
+    out_xyxy = [[b[0]*img_w, b[1]*img_h, b[2]*img_w, b[3]*img_h] for b in boxes]
+    return out_xyxy, list(labels), list(scores)
+
+
+def predict_all(
+    models: list[YOLO],
+    img_paths: list[Path],
+    fname_to_id: dict[str, int],
+    idx_to_cat: dict[int, int],
+    imgsz: int,
+    flip: bool,
+    scales: list[int] | None,
+    max_det: int,
+    conf: float,
+    wbf_iou: float,
+) -> list[dict]:
+    """Main inference loop with memory cleanup every 50 imgs."""
+    preds = []
+    t0 = time.time()
+    # Get image sizes lazily for WBF normalization
+    from PIL import Image  # local import
+    sizes_cache: dict[str, tuple[int, int]] = {}
+
+    for i, img_path in enumerate(img_paths):
+        image_id = fname_to_id.get(img_path.name)
+        if image_id is None:
+            continue
+
+        # All passes for this image
+        all_xyxy, all_cls, all_conf = [], [], []
+        sz_list = scales if scales else [imgsz]
+        for sz in sz_list:
+            for model in models:
+                xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, flip)
+                if xyxy:
+                    all_xyxy.append(xyxy)
+                    all_cls.append(cls)
+                    all_conf.append(cf)
+
+        # Merge
+        if len(all_xyxy) == 0:
+            continue
+        if len(all_xyxy) == 1 and not flip:
+            xyxy, cls, conf_list = all_xyxy[0], all_cls[0], all_conf[0]
+        else:
+            if img_path.name not in sizes_cache:
+                with Image.open(img_path) as im:
+                    sizes_cache[img_path.name] = im.size  # (W, H)
+            w, h = sizes_cache[img_path.name]
+            xyxy, cls, conf_list = wbf_merge(all_xyxy, all_cls, all_conf, w, h, wbf_iou)
+
+        # Emit COCO entries with degenerate-bbox protection
+        for k in range(len(xyxy)):
+            x1, y1, x2, y2 = xyxy[k]
+            bw = x2 - x1
+            bh = y2 - y1
+            if bw < 1.0 or bh < 1.0:
+                continue  # protect against eval validator rejection
+            cat_id = idx_to_cat.get(int(cls[k]))
+            if cat_id is None:
+                continue
+            preds.append({
+                "image_id": image_id,
+                "category_id": cat_id,
+                "bbox": [round(x1, 2), round(y1, 2), round(bw, 2), round(bh, 2)],
+                "score": round(float(conf_list[k]), 4),
+            })
+
+        if (i + 1) % 50 == 0:
+            torch.cuda.empty_cache() if torch.cuda.is_available() else None
+            gc.collect()
+            elapsed = time.time() - t0
+            rate = (i + 1) / elapsed
+            eta = (len(img_paths) - i - 1) / rate
+            mem = torch.cuda.memory_allocated() / 1024**3 if torch.cuda.is_available() else 0
+            print(f"  [{i+1}/{len(img_paths)}] {rate:.2f} img/s eta={eta:.0f}s preds={len(preds)} gpu={mem:.1f}GB",
+                  file=sys.stderr, flush=True)
+
+    return preds
+
+
+# ---------- CLI ----------
+def main() -> None:
+    p = argparse.ArgumentParser(description="Enhanced YOLO inference with TTA + WBF")
+    p.add_argument("--input", type=Path, required=True, help="Directory with input images")
+    p.add_argument("--output", type=Path, default=Path("predictions.json"))
+    p.add_argument("--model", type=str, help="Single model path (legacy compat)")
+    p.add_argument("--models", nargs="+", help="Multiple model paths for ensemble WBF")
+    p.add_argument("--confidence", type=float, default=0.001,
+                   help="Minimum confidence (default: 0.001, low for mAP)")
+    p.add_argument("--taxonomy", type=Path, default=Path("taxonomy.json"))
+    p.add_argument("--annotations", type=Path, default=Path("test_images.json"))
+    p.add_argument("--mode", choices=list(MODES.keys()),
+                   help="Preset profile (overrides --imgsz/--tta-* unless specified)")
+    p.add_argument("--imgsz", type=int)
+    p.add_argument("--tta-flip", action="store_true")
+    p.add_argument("--tta-scales", type=int, nargs="+")
+    p.add_argument("--wbf-iou", type=float, default=0.55)
+    p.add_argument("--max-det", type=int)
+    args = p.parse_args()
+
+    # Apply mode preset, allow override by explicit flags
+    preset = MODES[args.mode] if args.mode else {"imgsz": 1536, "flip": False,
+                                                   "scales": None, "max_det": 300}
+    imgsz = args.imgsz if args.imgsz else preset["imgsz"]
+    flip = args.tta_flip if args.tta_flip else preset["flip"]
+    scales = args.tta_scales if args.tta_scales else preset["scales"]
+    max_det = args.max_det if args.max_det else preset["max_det"]
+
+    # Models
+    model_paths = args.models or ([args.model] if args.model else [])
+    if not model_paths:
+        print("ERROR: provide --model or --models", file=sys.stderr); sys.exit(1)
+    print(f"Mode: {args.mode or 'custom'} | imgsz={imgsz} flip={flip} scales={scales} max_det={max_det}",
+          file=sys.stderr)
+    print(f"Models: {model_paths}", file=sys.stderr)
+    if (flip or scales or len(model_paths) > 1) and not HAS_WBF:
+        print("WARNING: ensemble_boxes not installed, falling back to concat (may degrade mAP)",
+              file=sys.stderr)
+
+    models = [YOLO(p) for p in model_paths]
+
+    # Image discovery
+    exts = {".jpg", ".jpeg", ".png", ".bmp", ".tiff"}
+    fname_to_id = load_image_id_map(args.annotations)
+    idx_to_cat = load_taxonomy(args.taxonomy)
+    img_paths = sorted(p for p in args.input.iterdir()
+                       if p.suffix.lower() in exts and p.name in fname_to_id)
+    if not img_paths:
+        print(f"ERROR: no matching images in {args.input}", file=sys.stderr); sys.exit(1)
+    print(f"Images: {len(img_paths)}", file=sys.stderr)
+
+    # Run
+    t0 = time.time()
+    preds = predict_all(models, img_paths, fname_to_id, idx_to_cat,
+                        imgsz=imgsz, flip=flip, scales=scales, max_det=max_det,
+                        conf=args.confidence, wbf_iou=args.wbf_iou)
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(preds))
+    print(f"\nDONE {time.time()-t0:.0f}s | {len(preds):,} preds | {args.output} "
+          f"({args.output.stat().st_size/1024/1024:.2f}MB)", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()
