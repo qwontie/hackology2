@@ -1,4 +1,4 @@
-name: Submit Predictions
+name: Submit Actual Predictions
 
 on:
   push:
