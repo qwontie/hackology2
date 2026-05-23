@@ -57,4 +57,4 @@ model3.train(
 print("Done! Weights are saved")
 for name in ["model1", "model2", "model3"]:
     p = Path(f"runs/{name}/weights/best.pt")
-    print(f"  {p}  {'✓' if p.exists() else '✗ NOT FOUND'}")
+    print(f"  {p}  {'✓' if p.exists() else '✗ 'NOT FOUND'}")  
