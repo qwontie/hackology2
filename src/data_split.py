@@ -4,7 +4,6 @@ from pathlib import Path
 from collections import defaultdict
 from sklearn.model_selection import train_test_split
 
-
 def stratified_split(
         annotations_path: Path,
         images_dir: Path,
