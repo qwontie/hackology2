@@ -3,18 +3,17 @@ from pathlib import Path
 
 
 
-EPOCHS = 100
+EPOCHS = 30
 IMGSZ  = 640
-BATCH  = 16  
+BATCH  = 32  
 
-model1 = YOLO("yolov8s.pt")
+model1 = YOLO("yolov8l.pt")
 model1.train(
-    data="bottles.yaml",
+    data="dataset.yaml",
     epochs=EPOCHS,
     imgsz=IMGSZ,
     batch=BATCH,
     seed=42,
-    fl_gamma=2.0,
     # аугментация
     hsv_h=0.015, hsv_s=0.7, hsv_v=0.4,
     fliplr=0.5,  flipud=0.0,
@@ -26,12 +25,11 @@ model1.train(
 
 model2 = YOLO("yolov8m.pt")
 model2.train(
-    data="bottles.yaml",
+    data="dataset.yaml",
     epochs=EPOCHS,
     imgsz=IMGSZ,
     batch=BATCH,
     seed=123,
-    fl_gamma=2.0,
     hsv_h=0.05, hsv_s=0.9, hsv_v=0.6,
     fliplr=0.5, flipud=0.5,
     mosaic=1.0, mixup=0.2,
@@ -41,12 +39,11 @@ model2.train(
 
 model3 = YOLO("rtdetr-l.pt")
 model3.train(
-    data="bottles.yaml",
+    data="dataset.yaml",
     epochs=EPOCHS,
     imgsz=IMGSZ,
     batch=BATCH,
-    seed=777,
-    fl_gamma=2.0,
+    seed=787,
     degrees=15.0, translate=0.2,
     scale=0.6,    shear=5.0,
     mosaic=0.5,
