@@ -1,0 +1,62 @@
+name: Submit Predictions
+
+on:
+  push:
+    paths:
+      - "submissions/*.json"
+
+permissions:
+  contents: read
+  statuses: write
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate submission format
+        run: |
+          python3 -c "
+          import json, sys, glob
+
+          files = glob.glob('submissions/*.json')
+          if not files:
+              print('No submission files found')
+              sys.exit(1)
+
+          for f in files:
+              data = json.loads(open(f).read())
+              if not isinstance(data, list):
+                  print(f'{f}: must be a JSON array')
+                  sys.exit(1)
+              for i, entry in enumerate(data):
+                  for key in ('image_id', 'category_id', 'bbox', 'score'):
+                      if key not in entry:
+                          print(f'{f}: entry {i} missing key {key}')
+                          sys.exit(1)
+          print('Validation passed')
+          "
+
+      - name: Trigger evaluation
+        env:
+          GH_TOKEN: ${{ secrets.EVAL_DISPATCH_TOKEN }}
+        run: |
+          gh api /repos/${{ vars.EVAL_REPO }}/dispatches \
+            -X POST \
+            -f event_type=evaluate \
+            -f 'client_payload[team_id]=${{ vars.TEAM_ID }}' \
+            -f 'client_payload[team_repo]=${{ github.repository }}' \
+            -f 'client_payload[sha]=${{ github.sha }}' \
+            -f 'client_payload[predictions_path]=submissions/predictions.json'
+
+      - name: Set commit status on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api /repos/${{ github.repository }}/statuses/${{ github.sha }} \
+            -X POST \
+            -f state=failure \
+            -f description="Submission validation failed" \
+            -f context=hackology/submit
