@@ -1,0 +1,6 @@
+[project]
+name = "hackology2"
+version = "0.1.0"
+description = "Solution for Hackology 2 Hackathon"
+requires-python = ">=3.12"
+dependencies = []
