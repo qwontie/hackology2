@@ -1,0 +1,4850 @@
+{
+  "info": "Public test images \u2014 generate predictions for these images only.",
+  "images": [
+    {
+      "id": 1411,
+      "file_name": "4b669e56-0346-3d51-9444-06e676b16aa7.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1414,
+      "file_name": "376b8614-f0a4-32bd-b9d3-e02d31badf6c.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1415,
+      "file_name": "a982bd05-06d6-350a-ab80-cec4a436439d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1421,
+      "file_name": "694f65f2-9f85-35f5-a302-ffa8b9e111dd.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1426,
+      "file_name": "eecf4bde-2846-3cf0-a357-f65e431143ee.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1430,
+      "file_name": "1d3026ad-6f36-38a0-a458-fe5cab5fc946.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1431,
+      "file_name": "b2eb6744-e44c-3605-9931-6a2383f79751.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1432,
+      "file_name": "1065c571-98e6-3837-9323-844d98b6252f.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1434,
+      "file_name": "2c6387d3-c339-3ca1-8f21-2237e496e478.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1438,
+      "file_name": "a2f38b93-c4ae-347c-aaef-13c28a3f0d61.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1440,
+      "file_name": "4c7f8513-ae7c-399f-82ba-a232cee52a74.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1441,
+      "file_name": "48b7002c-8ca9-3a86-b736-29a3371a8d0c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1442,
+      "file_name": "9ade6a2f-6c03-3117-8172-7e6587a8e8f4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1450,
+      "file_name": "4754c454-b415-3432-847f-2b5a81ee5b7d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1451,
+      "file_name": "f91eb0bf-c849-3f5d-b1f1-b287d7c29fae.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1453,
+      "file_name": "2455a431-1adf-34d1-bdb8-5ef6464cb79a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1455,
+      "file_name": "bc0cf7f4-5823-3877-ae29-fc6bdc14ab32.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1463,
+      "file_name": "66d72abd-bfa2-3f75-a485-0d939cf0fccd.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1464,
+      "file_name": "dbf85838-79df-31c5-b483-3d61abac6ab7.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1465,
+      "file_name": "bacd5a9b-22fd-3420-9bbf-b9c1b4987738.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1466,
+      "file_name": "5ccf5df7-ba7f-3914-aae9-328ab99bc6b3.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1468,
+      "file_name": "f1f372a0-173c-34f5-8880-7e98387dfbcc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1473,
+      "file_name": "6cc0f9fa-0ce5-398f-8968-d1875281e576.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1474,
+      "file_name": "a2bda50a-b75d-3ec7-929b-c714053a73df.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1475,
+      "file_name": "12189f5b-e44b-3dfd-8664-cfac96e04139.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1480,
+      "file_name": "9ab06681-6745-32e8-99b7-31ab2dfca92c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1486,
+      "file_name": "e34be590-a236-32be-b11e-d76c277f5dad.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1490,
+      "file_name": "9f62ce3f-df87-32d0-9397-c5890ea679dc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1492,
+      "file_name": "782bc4be-3136-312a-a087-ca69fc54c1b9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1495,
+      "file_name": "8c1e0485-7197-3611-9f3b-696043b56845.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1497,
+      "file_name": "3e8656ea-98a5-35e0-8457-07350ad5b6c4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1498,
+      "file_name": "6eb2d8ec-6fa3-3b2e-88c3-828e1efc0a96.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1503,
+      "file_name": "62621ffb-23c9-312b-a022-9a148aec392c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1504,
+      "file_name": "e4971f56-413e-3353-b393-12ebd8166cb3.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1505,
+      "file_name": "0a2bd4e1-9da2-34b9-90c0-f0978ca42a3b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1506,
+      "file_name": "b07c9bec-92b4-3c0d-9999-fe456a47170f.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1512,
+      "file_name": "0b91dfce-5f1b-32b1-8ead-1552342747a9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1515,
+      "file_name": "792b01f0-225e-3303-aa14-4a0f1028dc7b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1517,
+      "file_name": "d65d1137-0fbb-34ec-9a93-be074e6242f0.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1518,
+      "file_name": "5085d9b8-4af1-39a1-8728-a755b3a70d83.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1519,
+      "file_name": "e0ca8070-3f3e-351d-87aa-410b68a0c4a4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1521,
+      "file_name": "db685f5d-13da-33aa-8a88-04bc55537e33.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1531,
+      "file_name": "e9354c2a-a9e9-3f22-9dfd-b9dbec032623.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1532,
+      "file_name": "da917303-50fe-3f6d-8992-6f22aa3e176a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1534,
+      "file_name": "d68c61b0-13cb-36b3-afa9-dc36999e89d7.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1538,
+      "file_name": "982e652f-32e6-358b-97d6-8d6a7257f753.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1539,
+      "file_name": "e34c4345-4f08-3363-8b3b-07f9a103d950.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1542,
+      "file_name": "5bc2efea-1803-3cc7-8857-c6ffd866a1dc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1543,
+      "file_name": "a9384fef-19af-3b4b-a066-647646f71a7a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1550,
+      "file_name": "7a7e1139-dd44-36c7-b85e-d9a63c2f8f4d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1553,
+      "file_name": "084dcbd5-86f5-374a-89d3-3548bf5c3715.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1557,
+      "file_name": "b0bb9fdf-25cd-3043-8683-d8f88d07a63d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1559,
+      "file_name": "78f0f3fe-f477-370a-879a-78acfa305432.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1560,
+      "file_name": "0dc7fb64-722d-3cec-be06-5ac80f636588.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1565,
+      "file_name": "0c4f9807-e69c-33a2-8898-1aa3531e1948.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1572,
+      "file_name": "373085ca-c7fa-389a-9ae1-35968220c611.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1578,
+      "file_name": "0a7d2264-95f9-3dcf-9af2-6c0c5676952b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1580,
+      "file_name": "679d7850-40ed-35f7-98c5-b24e317952c3.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1582,
+      "file_name": "b168eb0d-58e6-331c-a883-a4287f24b991.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1587,
+      "file_name": "f36099ef-04e8-3907-a7ab-d5d1d73efee4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1588,
+      "file_name": "1a486307-4f98-3252-a9b2-950a1b0eac8d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1590,
+      "file_name": "d16d636f-a426-341e-9a53-53ed3764d41a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1593,
+      "file_name": "8389d0d3-cc32-3a8a-9127-c288db828af5.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1596,
+      "file_name": "b1319d58-0896-361a-b913-ea1de8f8ae19.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1605,
+      "file_name": "8acd7eb5-026c-32ef-a967-039a6a715b51.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1607,
+      "file_name": "1adfaff0-c2fd-3e17-ad7f-1fe9b8a231cc.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1611,
+      "file_name": "6c130368-ba16-379b-be44-586a32616acc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1613,
+      "file_name": "1c70c03d-a647-335c-b48c-8aa0eb286d72.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1619,
+      "file_name": "8b9331ad-3857-3154-acea-f2c00471b2fd.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1620,
+      "file_name": "761df6e5-9693-34b5-ab90-4940eafdeda2.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1621,
+      "file_name": "655756a5-ec8e-339c-8ec0-6e3bc33a5c2f.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1626,
+      "file_name": "2c970680-3cc0-34f5-8fb7-4785df16596c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1633,
+      "file_name": "4e369f7f-2dcb-32fa-ac40-29e0a82b8817.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1641,
+      "file_name": "0dc3a977-186b-3912-abbb-7aeb2bae1ef1.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1644,
+      "file_name": "7c706328-0093-3b0e-b844-a3579a99d831.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1647,
+      "file_name": "01b25923-8b83-3a17-898c-3457f747ae4c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1649,
+      "file_name": "ad686137-baa0-3287-abac-fab82f23e212.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1652,
+      "file_name": "6cf5f1d1-31aa-3f4d-a11b-7913d46b701e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1656,
+      "file_name": "d53b5a73-afb4-3555-a00a-5126d0934864.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1658,
+      "file_name": "a1524329-09b8-3edf-ab80-bc1f3f81dc7a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1665,
+      "file_name": "394518d8-f34a-3731-95f1-bc4cc87f425e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1667,
+      "file_name": "00af7571-0ded-3444-b13c-3ba534edfbf8.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1669,
+      "file_name": "fcfb79ee-441e-354d-83b2-fe7574aca8da.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1671,
+      "file_name": "fb4c955a-41fa-3682-936e-f36383115806.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1676,
+      "file_name": "4dbf1853-c7c6-3e2e-8a9d-b1694d8149fe.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1687,
+      "file_name": "3355d0f9-696f-32a1-b295-a1591f9080cf.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1694,
+      "file_name": "784c6fcc-5fff-30af-9d05-4faccb925c43.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1696,
+      "file_name": "a9f12aea-b9ba-3f1b-8e71-cd7d98705c0b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1699,
+      "file_name": "b0fc7491-f96c-3034-82bd-8429d8015fc9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1702,
+      "file_name": "0f1c6f6d-8af2-3b65-9342-79e8870a95cc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1703,
+      "file_name": "26268746-f53c-3c8c-9f47-c65001e6f8b5.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1706,
+      "file_name": "c0df4298-16bf-3388-a780-7c3a53f6b6a2.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1712,
+      "file_name": "4dbf9235-6fa0-354d-84a1-538a5a20774b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1713,
+      "file_name": "76ef872e-503c-3400-b226-9bb2ac6b4f6c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1716,
+      "file_name": "61633ad4-1aa8-3d9a-8d49-459a976ec3e7.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1721,
+      "file_name": "37569a09-1131-3210-95c9-9c07954ea141.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1727,
+      "file_name": "8c0f2c0f-6517-3652-b60b-d43cdb4ff5d9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1730,
+      "file_name": "86f32602-208a-30fc-8539-7483957d270a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1735,
+      "file_name": "9c7cc3fe-2676-361f-92ac-e45f9c26d374.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1742,
+      "file_name": "6fadce04-1676-3876-9bdb-78e232aca205.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1748,
+      "file_name": "3a92c03f-1553-3dbf-8e61-f9e4ae98d04b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1749,
+      "file_name": "1dc911af-3d85-3dbf-aa6e-e7e62a751093.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1752,
+      "file_name": "567dc620-9c5f-31ba-874b-c35dd9d4ba3b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1755,
+      "file_name": "0a8a105e-a093-35e7-a2a4-c8180f6f9a04.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1757,
+      "file_name": "70a6440a-d89b-3f07-ae5a-cf2096ff689b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1760,
+      "file_name": "ef141730-6697-35fa-bd5e-3dd7ea8349a6.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1765,
+      "file_name": "e14e4d62-2305-37fe-8be4-b860b0c962dc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1770,
+      "file_name": "ee70ff23-9403-3882-8744-50956fd95213.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1772,
+      "file_name": "bee4cc3b-7af3-38c3-b46b-88b5109f9a05.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1774,
+      "file_name": "b5f021c0-c1e6-3bf9-9093-4a4f68990f57.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1777,
+      "file_name": "2c92d3cd-e1ec-3e3e-b3ea-9bb07f32e8b3.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1778,
+      "file_name": "55abc93f-c106-3bd7-a4bf-86cab7aaeeb4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1779,
+      "file_name": "88ea49cd-9a42-3fd4-9f62-4edb8302ef3b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1780,
+      "file_name": "86dff5b6-253c-3bcc-808a-73bd52188f3d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1782,
+      "file_name": "cd6fc062-b312-3a3a-afed-c9b4cf87bc1a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1784,
+      "file_name": "62992fbd-7d75-3cb2-8b8e-d027a756c059.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1788,
+      "file_name": "bb95ddad-6074-39ae-b986-0ac882aefe97.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1789,
+      "file_name": "014bb973-4e0c-3d7b-bdc8-02fa8d2acdae.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1791,
+      "file_name": "27f7e2c7-957c-347c-bf16-df3dc24c16b9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1792,
+      "file_name": "46e910e1-d508-38e6-8823-50371d8dad1a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1793,
+      "file_name": "f28b78d2-ef49-37ee-b3a7-3d7e1e3b9e48.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1797,
+      "file_name": "c6887123-ac19-3038-a086-f9fc512defcb.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1800,
+      "file_name": "548fded4-754a-4d2d-af33-d9f1c45f353e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1802,
+      "file_name": "b8c9f9f7-26df-4eed-9bef-5fa54e7936e9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1804,
+      "file_name": "862201a4-aa53-4274-9084-494ff35c37c5.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1807,
+      "file_name": "c7b6d5cd-8e76-48ba-a0e0-7f3d9ffa9b74.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1808,
+      "file_name": "25788acc-7379-47ea-a150-b926b5252e97.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1810,
+      "file_name": "24688082-3f8e-42b8-b48a-29f082bb7cf0.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1815,
+      "file_name": "d636b90b-b145-444e-bfd3-af4740f24540.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1825,
+      "file_name": "af82df15-db1f-4716-b392-c8f3b89e3b3b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1828,
+      "file_name": "604d9fc8-3e6c-48f7-8ca7-624054766974.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1833,
+      "file_name": "d89bf2ec-9b74-41ad-bd15-fbadf195bb16.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1834,
+      "file_name": "65b6c4fd-c245-40c4-abe1-db12e3d84352.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1840,
+      "file_name": "5cde99fe-c939-4ae8-a27d-d611784a4c96.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1847,
+      "file_name": "0d3a968e-4613-4143-8d4d-433df33ff5cb.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1850,
+      "file_name": "377dd6f5-7374-4517-acc8-f69984639801.jpg",
+      "width": 3022,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1856,
+      "file_name": "abd6acbb-abff-4b5d-a5fc-33f46685392b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1860,
+      "file_name": "f8e5cb03-e015-4da4-8b18-75ec549e4acb.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1865,
+      "file_name": "f2904cf9-d8ba-4fc6-87b4-4838a01c0262.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1868,
+      "file_name": "eefe7e97-85cf-420f-add6-6e724a891abe.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1869,
+      "file_name": "9c127748-6781-44b8-a4cf-9079cd17ae99.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1870,
+      "file_name": "1c1e0bd2-f555-4f73-8b5a-3cda9950205e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1880,
+      "file_name": "440f5084-f298-4663-93a6-4a87ec2e62cc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1882,
+      "file_name": "5ccd9008-815f-4a2a-9cd0-90cc14ee6f78.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1888,
+      "file_name": "deac429e-6045-4e71-b559-d02c94afc26b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1891,
+      "file_name": "aa5a989d-9cd1-494a-ba70-430086f0cebd.jpg",
+      "width": 3022,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1892,
+      "file_name": "76b0ce27-a927-44fe-81b8-3e6a8bcd99af.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1895,
+      "file_name": "bbd0e382-28e6-4855-9bcc-5324f7659b00.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1898,
+      "file_name": "1f5d1f00-4159-4ed0-8324-5683af85bbe7.jpg",
+      "width": 3022,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1904,
+      "file_name": "224198ed-71cd-425a-a841-6b6fb26664d8.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1919,
+      "file_name": "d5635de3-4f9a-416f-851a-5556b06aa822.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1921,
+      "file_name": "2e9097a4-aa0b-4fea-9333-56b30caae3cc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1922,
+      "file_name": "a20818e8-83d7-4ae2-baa6-f9ec9d4850b2.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1923,
+      "file_name": "e2eaacdc-696a-465d-a8cd-784b37f39033.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1928,
+      "file_name": "d658fab1-378e-486c-94c4-aa9436e5c450.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1930,
+      "file_name": "314f63c9-63db-4238-b446-0bf7630c1e7c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1931,
+      "file_name": "b84bde2c-9dbf-4f06-a670-8631ac695805.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1934,
+      "file_name": "6c545f66-b1c3-46e4-b9e9-ff9616910f5d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1938,
+      "file_name": "c76f0394-78ba-4ff2-a8c4-4625e088879f.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1939,
+      "file_name": "37f6765d-ee65-4e4a-8a31-4c7546c98b4e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1950,
+      "file_name": "02bf75b3-f942-40da-86a7-1707c0705ee4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1953,
+      "file_name": "3b806e7d-480d-48f5-aed4-c4e22c3eedef.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1955,
+      "file_name": "cb497d0c-f7ec-4150-8ba3-42372ae2c529.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1956,
+      "file_name": "db7bcb57-afbd-4fe1-a208-3de10eeeacf8.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1959,
+      "file_name": "6a446aa0-a67d-431d-bbf3-e7977219d8c6.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1960,
+      "file_name": "2ba46c5a-6b50-41ce-acd6-60a25703c342.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1964,
+      "file_name": "8e051822-b1d0-4995-b779-e426ea2723cd.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1967,
+      "file_name": "925f3468-aeb1-4bc3-aaca-6679b9e5f563.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1970,
+      "file_name": "2dc1861d-7ad7-4831-ad48-93a18d487ee3.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1973,
+      "file_name": "b335a3ed-c5aa-436e-984b-b98654815bb8.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1978,
+      "file_name": "b93dad7f-146f-4d57-87eb-659041db694f.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1979,
+      "file_name": "99ed1976-e4bb-401e-b1cf-dc1518fc1a93.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1980,
+      "file_name": "e9e0bb0e-dbf0-43c0-8883-997291c75fd1.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1981,
+      "file_name": "04754780-ba86-4ef3-88c0-2480539d736e.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1984,
+      "file_name": "6941a31d-cc46-448d-b459-119151f23102.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1986,
+      "file_name": "63f8edc7-3f78-4b96-8f4a-e591b2a85fa4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1992,
+      "file_name": "18d259dc-c8fb-4cd9-a55b-49902888d17c.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1994,
+      "file_name": "1cbf6ff8-d438-497d-afa3-643c8342723a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1997,
+      "file_name": "3582d06d-d307-4c44-9438-a1cf5e2ba7fc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 1999,
+      "file_name": "7a8bad9c-5e6b-4628-a6c3-53294209ab5d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2000,
+      "file_name": "34033d3d-c2db-48da-8888-0491065b9704.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2003,
+      "file_name": "d0aa86bb-5caa-4b5e-b25e-eea9c8317be8.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2005,
+      "file_name": "d19e4ce1-f9de-4ad0-9274-174c9a9491ac.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2010,
+      "file_name": "32b03b6e-dde2-41d6-8ee1-58cb9e89fec2.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2024,
+      "file_name": "8e581003-5257-483a-a004-8c1a202b8c6d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2029,
+      "file_name": "eea12138-2398-4c2d-98c7-e9e7e5276056.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2032,
+      "file_name": "6366e8cc-b3dd-4e6d-a458-1176781c54a1.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2033,
+      "file_name": "8a1c88d3-104b-4005-8c32-30377ad5c0dc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2034,
+      "file_name": "2fc879d4-55a5-410e-910a-5aefa489f289.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2038,
+      "file_name": "41b8b713-d120-41b6-864f-bbac9ca531a6.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2045,
+      "file_name": "d67c1588-b4ee-4d21-8064-1286db85af17.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2047,
+      "file_name": "b6cc7350-79e3-45c5-8380-3f4eab526ec1.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2051,
+      "file_name": "23131927-2979-4eb0-a951-25611b69b8e0.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2054,
+      "file_name": "d395bb59-f25a-4873-a7fb-26c054bd81ce.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2058,
+      "file_name": "a3cbbcb5-98e0-4b23-b8d3-e70a900911c1.jpg",
+      "width": 2376,
+      "height": 3404,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2062,
+      "file_name": "42ca6fb1-7099-447d-98e3-39d78c8c5ed0.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2063,
+      "file_name": "3b59122c-2d00-4a46-9793-25e8604afe89.jpg",
+      "width": 3402,
+      "height": 2376,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2068,
+      "file_name": "c296c6a6-49c9-4d11-9f9d-0ea0d6d51265.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2080,
+      "file_name": "b376593f-75c6-43db-82e7-80c08c25d5ba.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2081,
+      "file_name": "8b282fa3-2c59-409f-bbc1-76aafa31cd58.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2087,
+      "file_name": "20997d92-f9cf-41ea-9ed7-625f4b268f83.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2088,
+      "file_name": "d64075ed-0654-428b-8c1a-d214ec91ca70.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2094,
+      "file_name": "80bf13a4-dec2-4d55-b52e-2f7450fff08a.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2096,
+      "file_name": "d4039c08-168f-4b5f-9323-07b0ee5bcfdc.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2105,
+      "file_name": "624fea99-53e5-4a35-a98e-203c3f21cc31.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2107,
+      "file_name": "c31b4a3e-b560-4f93-8f14-b405d27c0316.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2115,
+      "file_name": "0c1fe31c-1484-426d-81f5-7c9c136800f3.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2117,
+      "file_name": "3b2ce9af-07c2-47b5-8178-d1e2d7258a9c.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2121,
+      "file_name": "ad940eea-0e44-42e4-aaf3-dc2d180623c5.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2123,
+      "file_name": "66adb1c6-59cc-4251-b6eb-9b61900e8873.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2126,
+      "file_name": "0ed35ebe-6a21-4668-8761-749f80149c95.jpg",
+      "width": 3402,
+      "height": 2376,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2127,
+      "file_name": "f825bdd8-81d9-4987-9468-8c669aeb6093.jpg",
+      "width": 3402,
+      "height": 2376,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2132,
+      "file_name": "b7504980-81f8-4a77-8768-d7bdb55516ab.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2135,
+      "file_name": "0a8af92a-8626-4ec1-a119-7d74a70069d0.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2136,
+      "file_name": "1d70c7e7-6518-4461-9c1a-4ab959a3f53a.jpg",
+      "width": 3402,
+      "height": 2376,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2137,
+      "file_name": "0fb542d0-5806-4a0b-83f6-3ecb7d4968e6.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2139,
+      "file_name": "7c2606b2-afbc-458b-889a-e594fe3c674c.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2140,
+      "file_name": "9d68b82e-2346-47a3-802e-2732606530f7.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2142,
+      "file_name": "01ad9d0f-3875-43d4-8861-d4d2491e8789.jpg",
+      "width": 2376,
+      "height": 3402,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2146,
+      "file_name": "f6ca7ea7-f7ee-4a77-9ed1-78f74b07e41a.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2150,
+      "file_name": "93082b18-a243-4e59-b3aa-e57c29e9df66.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2156,
+      "file_name": "c91bff7f-67ef-41dc-8871-5244518cbd45.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2160,
+      "file_name": "70f7a447-ed97-4da8-bba8-357cc76831ed.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2161,
+      "file_name": "840db9ee-d804-4c46-9dee-e1c7d012bdae.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2165,
+      "file_name": "69ecb7ef-2cfd-44dc-8f06-daedb6356de9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2167,
+      "file_name": "7ae1244d-1cb4-4b15-b7fa-3c37f8b53291.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2168,
+      "file_name": "24b4c6b3-6d99-4a49-8a07-25ac78945046.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2169,
+      "file_name": "357b21de-cc9f-4e28-b556-612660c61847.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2175,
+      "file_name": "0ea922d3-4252-4cbf-9a1e-be671c68d262.jpg",
+      "width": 4032,
+      "height": 3024,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2179,
+      "file_name": "ab2a61d8-633a-44db-9ba6-eb25400d4e58.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2188,
+      "file_name": "f2750cf9-69c6-4cf1-8cf9-97a043375779.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2195,
+      "file_name": "6c160553-9fc9-4ef0-881a-b930a0fa08fa.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2198,
+      "file_name": "2a2c3aa5-06d5-4c75-a0ed-2ce286ec6db9.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2200,
+      "file_name": "4ae45e71-45e3-4cc5-807f-6799348c0d63.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2203,
+      "file_name": "e1695c03-473d-49a7-909e-a2c078a0aba5.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2204,
+      "file_name": "dca5d86c-93e2-463e-be22-8d60f7f14e50.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2206,
+      "file_name": "3db0e4c5-beb9-4a4f-92b1-827affb212db.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2208,
+      "file_name": "a544124d-2dbd-4e1a-b9c5-760d3598a8fc.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2210,
+      "file_name": "c0841798-d8c1-4add-95a9-4a6d3f765779.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2211,
+      "file_name": "2f8130c0-2d7c-4056-a862-675e12624463.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2212,
+      "file_name": "47f0f73f-2262-4bf2-adea-35e7dbd061e4.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2214,
+      "file_name": "409df5c1-7f8b-44a8-a3c9-e45bd6c2a669.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2215,
+      "file_name": "8335e62d-e424-4aed-adfb-f78a661b5f2d.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2219,
+      "file_name": "3aee08a4-4e5c-4023-a3bc-3944457b29f2.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2220,
+      "file_name": "6686b7f8-cba0-4140-aa5c-c864bf328b55.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2231,
+      "file_name": "26cd7338-3ad1-483b-a004-c354d998f348.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2233,
+      "file_name": "49d32955-c4c4-489e-9e57-54df866e0b0b.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2234,
+      "file_name": "6050cc21-ce94-4fe4-b4ef-17f383432310.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2235,
+      "file_name": "9c76aaa0-8a35-4942-95e0-590586a33fba.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2236,
+      "file_name": "806122ad-e0e2-42d5-97ca-575eeb45b404.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2243,
+      "file_name": "6e9f40db-10b0-4692-b3f2-169f078e85c2.jpg",
+      "width": 3024,
+      "height": 4032,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2246,
+      "file_name": "da9c8968-e7e2-4dd9-b340-34bcd9b07830.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2248,
+      "file_name": "050af951-dbba-4205-a722-aa6e1319a56d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2251,
+      "file_name": "69f21fce-89b6-482e-9b37-c45717bcb3dd.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2252,
+      "file_name": "3ef8f98c-d55a-4d67-b4f2-a48e8bc87499.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2255,
+      "file_name": "b011360c-2714-4bd6-89cf-843faf23c06b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2259,
+      "file_name": "7748d5e9-ff8e-497a-abb9-0457075db25a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2262,
+      "file_name": "bd3dd2a2-9404-43d0-b9c9-52839bec2ba8.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2263,
+      "file_name": "86310807-c49f-41a6-b2ac-f0cec1aca1de.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2268,
+      "file_name": "e07a0f4c-fe7f-45ec-a38b-b153d7852b2c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2269,
+      "file_name": "f0f97431-5a21-4c83-9fe9-4e5e3d20167c.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2277,
+      "file_name": "11c48a2e-cdd6-4546-9c39-9e6b3ea031f2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2278,
+      "file_name": "e1d415e4-e0c1-4244-9387-cee886c921c6.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2284,
+      "file_name": "107b6347-246b-40dc-be7b-268cc3cf3fc3.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2287,
+      "file_name": "2df99283-69eb-4a3e-a3ed-427bb6693615.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2292,
+      "file_name": "732e2fcb-cfdb-4fb0-bd19-883e3f0d4cff.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2294,
+      "file_name": "69b68b2d-7a51-4a0d-b418-7eb501e1374e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2297,
+      "file_name": "9eedbd4d-7cb5-43ad-8621-d5ea053140ab.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2298,
+      "file_name": "9e0de2e0-a59e-407e-86af-b1883441426e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2300,
+      "file_name": "d4254bd5-3bcd-4fcd-8900-79bba086112e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2301,
+      "file_name": "0ce515e7-24f0-4295-9ba1-e85c9c271f5c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2308,
+      "file_name": "d67d1417-59e1-4312-b055-a73304fc3c90.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2309,
+      "file_name": "69124472-7d86-4610-aaa3-5ed523e5ed4c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2314,
+      "file_name": "4f728220-ff56-46f0-b33d-d7f065f2ba10.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2316,
+      "file_name": "0892bb07-b7b9-4b89-a0fe-6cd10baf955b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2317,
+      "file_name": "de6ec455-ff90-4647-9555-73ee14afcf13.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2320,
+      "file_name": "3f166625-df24-408a-a65b-0af64d8731b3.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2321,
+      "file_name": "53143238-465f-407e-b22b-953c64ee17c2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2322,
+      "file_name": "99e627ed-2fb1-4c4c-9fd9-0157c35c32af.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2328,
+      "file_name": "7764151e-3c26-4732-b39b-6542db722950.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2331,
+      "file_name": "8daf36bd-709f-4667-9e08-bcfebd4ad1a8.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2333,
+      "file_name": "61a1a8b8-64c6-4ee5-98f1-75d37b816a9f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2336,
+      "file_name": "e0a30aa1-f56a-41bf-8a44-64ab635d3f5b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2343,
+      "file_name": "c91fe037-14b6-48a8-8bd8-43dab3911f75.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2350,
+      "file_name": "b1312a70-2b41-44c7-a9c7-005dcfcc2d38.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2351,
+      "file_name": "30cf48b1-8cc3-47e0-867d-f14419438966.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2354,
+      "file_name": "cfafa69e-d953-4cfa-ac36-6dbbf6d40221.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2356,
+      "file_name": "c7f00514-fa11-4fa0-ac45-6de1b12b76be.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2360,
+      "file_name": "fd5a2a59-c37b-4081-9bcc-0b124d867cde.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2361,
+      "file_name": "c81e724d-70fc-4ead-b41c-188e1247cae0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2363,
+      "file_name": "e3becf0c-f742-4026-aeee-7ed9ab2b6b3e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2366,
+      "file_name": "c17602fb-071c-45ad-8f9f-199384c1a9c1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2368,
+      "file_name": "8c6bc667-301b-416b-b36f-fd7bfa98f804.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2372,
+      "file_name": "2cb5c7c6-e045-4ebd-b50b-0d61e7aa673a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2377,
+      "file_name": "409bbcfa-4464-45ff-ba9c-015c182da502.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2380,
+      "file_name": "c1c4884e-2294-4367-9689-6855b30d40be.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2381,
+      "file_name": "8765230f-4571-4930-97ef-a95dd234ebcd.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2383,
+      "file_name": "64df24c9-a991-4f44-ad49-fdbdb1bb681f.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2387,
+      "file_name": "ebe91316-2348-43aa-a375-a9c4f1f45f57.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2389,
+      "file_name": "8a5ca608-c719-45c9-8a34-444605c7502b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2390,
+      "file_name": "ffd9f2a7-5f0f-4240-aaff-cbb14f2503d9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2392,
+      "file_name": "c7e6a66f-11b5-4a92-a674-5dc68226127d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2397,
+      "file_name": "19514afe-d79b-4d6b-8ca7-855a9f4ab2e2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2399,
+      "file_name": "e0ceb556-459c-47aa-bed7-548adfb081b1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2403,
+      "file_name": "d84b8d42-d9c3-420a-a0f6-51181665d47f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2405,
+      "file_name": "0c18f510-4b57-4ec3-8e46-424cdc5b69c6.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2408,
+      "file_name": "0ffeb6c3-ba2c-403e-b94f-db6a7ec51993.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2409,
+      "file_name": "e4519bac-894b-47e8-8a0a-e367891c7149.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2413,
+      "file_name": "e051f537-44e7-4cab-b4e0-149ea0a9a7b0.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2414,
+      "file_name": "0f894ec5-4aa5-40f4-9795-938cdfc5727e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2421,
+      "file_name": "c4cbb8bd-501d-4ded-930e-53d8d4e156c1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2422,
+      "file_name": "6c5545d3-5a12-4b2a-b6f0-72b4cff59ccf.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2423,
+      "file_name": "39802286-c824-45c5-be3e-4936a35ff3fb.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2424,
+      "file_name": "57b17833-b3f5-4115-acdb-96808f9f83d9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2425,
+      "file_name": "e1d6ae91-3fdd-4db3-9b12-91b36d1b4660.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2430,
+      "file_name": "d82d9c61-4267-48fe-9c2f-30ee6f30a096.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2432,
+      "file_name": "58f29703-2ea2-4ad5-b568-0920de4bc08a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2436,
+      "file_name": "9894ca14-28c0-4da5-8975-05f8b171ad79.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2446,
+      "file_name": "966fb430-d12b-4443-90b2-76e2819996d9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2451,
+      "file_name": "a95ba788-46ed-4496-8607-03d047a616c1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2462,
+      "file_name": "c8724cd4-8cad-47ec-b9ac-10c73fd4de1c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2463,
+      "file_name": "216971f1-2d96-4e86-aa29-a60a5cb8f1d0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2466,
+      "file_name": "8e8d37e7-3f06-4a24-af11-7b7612c51eed.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2471,
+      "file_name": "8ca25874-4b7d-481b-8f97-a798dfaebf2a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2472,
+      "file_name": "f6c6745a-d6e0-49e8-82f2-48b5d1419bb4.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2475,
+      "file_name": "68acd69b-6bb9-4563-a049-ca86470fc770.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2478,
+      "file_name": "dffee2f7-d8cd-4f97-92bf-9d678856600e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2479,
+      "file_name": "5252a184-f9b7-41a3-abb4-6d8d3a34e8c0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2482,
+      "file_name": "934e519c-70b6-456f-9d8b-9de86d6c44d7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2483,
+      "file_name": "f0dd8529-4886-405a-a162-284f37805c35.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2485,
+      "file_name": "3a692a0d-9da4-4733-b9ad-4e4e3f2aca78.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2487,
+      "file_name": "12643f9b-bfa3-42bf-b580-cfe23c6d903b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2490,
+      "file_name": "fff333bf-5b1b-4677-895d-5107fb85abb1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2491,
+      "file_name": "0cf913a3-e305-4688-8ac8-4ec8015ad54e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2493,
+      "file_name": "7e0fe5fa-e760-4d07-b63d-e425d900bd75.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2494,
+      "file_name": "ad5bd220-6844-47b1-98ab-7f80dc135460.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2495,
+      "file_name": "e8e2e8a2-73c2-4f51-85c1-ae1bfb281d87.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2498,
+      "file_name": "3864c859-0a23-4a3d-846e-8e85e1590bee.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2506,
+      "file_name": "540ed5ee-53d1-4346-a5d7-5c1722c09986.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2514,
+      "file_name": "118faf20-8c4e-4b86-ae6f-2ec41e435042.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2515,
+      "file_name": "f415db25-a6c8-4b5d-82e2-6beadc80170c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2516,
+      "file_name": "f99462f2-43ee-444c-abba-748134301401.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2517,
+      "file_name": "38207e73-7cdb-4360-9035-5c3ecce72c14.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2527,
+      "file_name": "02b0d0a4-b525-4e8d-9a58-33327dc43942.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2530,
+      "file_name": "e1009b76-ea58-400b-98e6-93f60b4f1698.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2538,
+      "file_name": "7016b6d1-9924-43ff-982e-382a285ebf01.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2548,
+      "file_name": "25d5d27e-3690-479d-a907-6925cf35b097.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2549,
+      "file_name": "f38d7a0e-36cb-4a41-94a5-c1241c67b5be.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2550,
+      "file_name": "d744d5ed-988f-460f-b8e1-7dddacc034da.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2553,
+      "file_name": "6bd5e050-4dff-49ba-b660-3a3ec604b9f7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2556,
+      "file_name": "05549e26-cab1-4e3c-835d-92a089f2d5a9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2558,
+      "file_name": "9ecd346d-a723-4497-ab0d-a392b7c04335.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2560,
+      "file_name": "7bec5cbe-99b3-4118-bada-973bd1e225f6.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2565,
+      "file_name": "06b614ca-476a-483f-96bc-8148f44ac2d1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2569,
+      "file_name": "f5d02e03-c0ae-4b5a-a2e2-24fa00076350.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2570,
+      "file_name": "567fc09d-5892-4d1b-a7ab-e7e4ea9cc4fe.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2573,
+      "file_name": "f983d295-dd38-4bb0-b89d-78c08386eb03.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2576,
+      "file_name": "f47a2cc6-c882-40fc-98e9-91e689279be3.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2577,
+      "file_name": "85a087fa-a1e2-41e3-ae0b-579c0389c167.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2578,
+      "file_name": "8ff6beba-fb24-4875-a8e3-97b84319391a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2581,
+      "file_name": "35ed9baf-5847-4716-90b5-9994b0f77301.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2584,
+      "file_name": "83d0636b-eda8-4e27-a1df-a5e801f3be4b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2585,
+      "file_name": "da8f8635-c676-4e6f-b7cc-5b4c7b003716.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2594,
+      "file_name": "5ef063e3-426c-4d78-a0a4-ac0905af4b55.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2599,
+      "file_name": "39aafce1-7ab8-46be-a13c-e044a9fba6f7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2604,
+      "file_name": "fe79f7db-2d45-4130-93d5-44dfaff78c21.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2605,
+      "file_name": "5f0697f1-0ccb-4997-8887-9abd3097651c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2606,
+      "file_name": "268ffcfb-8b88-45fe-8160-3a8387a0cab9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2609,
+      "file_name": "9433b40a-a47e-46d4-bf62-d0497c4612d7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2613,
+      "file_name": "686c16b6-8c5e-4a63-b241-8aba3ff79086.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2614,
+      "file_name": "25733ae5-a52d-402a-8002-14750fe87a0f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2616,
+      "file_name": "418e22c1-f9a9-4441-887d-82245cdcb307.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2629,
+      "file_name": "5c8ecd2d-525b-4186-b2a1-4ed03ca816e7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2630,
+      "file_name": "487e51f0-5dca-4d0d-a669-e36772695255.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2631,
+      "file_name": "96415cc8-43b1-4205-8a13-114711244ac7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2635,
+      "file_name": "f18d18f2-9b55-477d-b0df-80e322c3001f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2640,
+      "file_name": "82b23f32-0654-4383-9b4a-eaf81863da60.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2646,
+      "file_name": "33c6090f-0b01-4048-ba22-f30e2df8ea8d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2647,
+      "file_name": "cf44580f-4a38-45b3-9ed1-12fdd9e6d669.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2649,
+      "file_name": "e1d32f95-5d0b-4e6a-9242-01c22ff409c5.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2656,
+      "file_name": "c9dfc740-97d0-408d-b37d-194af27644bf.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2657,
+      "file_name": "927d2291-90f1-48e2-9857-b20638fc60ac.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2658,
+      "file_name": "8abb102a-4c47-46d4-bbf7-a7582ba4689f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2660,
+      "file_name": "9e8ea1ba-3fb9-4e7c-aa0c-60d5acedbd62.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2664,
+      "file_name": "1fbe050e-7277-42a2-9cd2-1236b35003b4.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2666,
+      "file_name": "877b7d95-16cb-455b-91de-7a7db6b81ab2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2669,
+      "file_name": "ae8ae974-a035-4e24-9de6-f0987ef0a80e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2673,
+      "file_name": "70bc23e1-965c-4cb2-b97d-ae1d0c0022a8.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2675,
+      "file_name": "4853d3c3-3448-4385-b020-63b1cb01c0d3.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2680,
+      "file_name": "d6f61743-07f4-4e42-ab1f-38bffc6827ed.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2682,
+      "file_name": "11221053-ad52-4be9-aa58-d1bfaf7ba174.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2687,
+      "file_name": "4341b9b4-3237-4494-bba3-7b0c3607125c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2699,
+      "file_name": "0cd2ac2e-6bdf-4ae7-92bd-fe5da5e2a4f4.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2711,
+      "file_name": "c74f5d4c-1f27-4653-ac96-ada812b6a535.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2713,
+      "file_name": "94f4cc53-7a18-49ca-887d-c9668a78e88a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2719,
+      "file_name": "92bd9454-0686-401c-8cbc-46a7b181267f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2721,
+      "file_name": "18a8b3e5-e514-4b14-8183-3cb2a1fd6bb9.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2724,
+      "file_name": "711ac025-898e-41ca-b68a-aa0306736af3.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2727,
+      "file_name": "5cc08e2c-424b-4885-9d42-6dc5f8789c75.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2730,
+      "file_name": "d4502bda-b9b4-4cb1-90c0-7b7008ccc828.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2731,
+      "file_name": "1aec7b00-906c-47a1-b577-4b0f0ded745c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2732,
+      "file_name": "1d1637d9-d4d0-412a-829c-b668255a4b8d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2738,
+      "file_name": "d27915b3-e93c-4a45-8450-a6f59a7fbf02.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2741,
+      "file_name": "5cd209fc-cac1-4cb6-aabc-df4f9c8c9059.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2742,
+      "file_name": "b1f8f2f8-cdf2-4b6a-94dc-5acb160d90d7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2745,
+      "file_name": "15e2343d-02c6-4bce-90b0-86baa4948b94.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2747,
+      "file_name": "7db23d57-06db-4f78-9dc6-19b46e7139e7.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2755,
+      "file_name": "74a9a8a4-92bf-45a1-8088-fa58a106285f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2756,
+      "file_name": "bc149d9a-4d2e-4643-9a85-916e4deab765.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2757,
+      "file_name": "745c0bc8-19fe-44bd-89d5-8d0c5309541d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2764,
+      "file_name": "22fbbd76-e0ce-44d4-8ddc-3a05700f963a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2769,
+      "file_name": "81cada57-fa8a-42a9-b6c6-82039fa3cff4.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2777,
+      "file_name": "870d6a02-c410-49d8-a0b2-6279194b72c0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2779,
+      "file_name": "09a41bd5-6243-4e83-9b78-0cb1679a3891.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2780,
+      "file_name": "2a505897-c3ff-409e-879b-5c4ef189d249.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2785,
+      "file_name": "0ec9ee22-1f97-4d99-a1c8-f9ce7c96bda1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2788,
+      "file_name": "eff9b3b6-b4e6-420d-ace9-3db0d629c461.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2789,
+      "file_name": "e1fe6f44-f133-4084-bda9-b8a7e0167e93.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2790,
+      "file_name": "f910f7d7-fe1a-423c-ac2f-8878ee4536dd.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2792,
+      "file_name": "82b56f00-b7a3-4644-9b74-53d60237e132.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2793,
+      "file_name": "33de35b7-3e60-4834-b754-68aaf283dd76.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2795,
+      "file_name": "0ae9ad26-d53c-4614-8aa0-988e3d17d113.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2807,
+      "file_name": "6a2d21bb-3e9f-422b-aa94-1ddb861c2307.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2809,
+      "file_name": "d57150c7-ad1c-4588-b45d-4f2e69413168.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2810,
+      "file_name": "ed573694-2bb2-4aa0-96c4-3f68ec6d0400.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2811,
+      "file_name": "f962cfb9-3027-4a02-b3f3-6ff6ad250629.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2812,
+      "file_name": "b3642ca6-9868-4004-b27e-eeedca776d84.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2818,
+      "file_name": "7e0f1a8d-c5d7-4179-bef8-daa3052f18bc.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2823,
+      "file_name": "d4c9fb41-7212-44ef-9dbc-1bd153864615.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2833,
+      "file_name": "dbf20a1b-91a6-4fc1-8d56-723b01b8d009.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2838,
+      "file_name": "ff76fd7e-eacf-475c-9c3a-1449949fc35c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2840,
+      "file_name": "34beb464-5798-414c-95de-9034225cf042.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2842,
+      "file_name": "0f47834e-d254-44a1-be94-255af438b91e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2844,
+      "file_name": "347ee909-f798-4878-9653-4b56792e491d.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2845,
+      "file_name": "5b6d165f-e4e0-4a76-86a1-5a7e713888a3.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2851,
+      "file_name": "c0495d3f-def6-4dd1-948f-0ef519d18818.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2852,
+      "file_name": "468ac64d-ee92-4d33-b480-9259041e4b94.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2858,
+      "file_name": "776fab25-e236-4e37-97b2-2bf48cbd63ca.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2859,
+      "file_name": "c36a3afb-7b37-4ec4-ad83-a748ceae9501.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2864,
+      "file_name": "5236f176-4d43-4d76-8846-dc4d450904d0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2879,
+      "file_name": "ea0f7ac6-182c-4ba1-be6b-db6c3f6cf4cd.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2880,
+      "file_name": "ac672cde-e6dc-40a0-8f32-923971af682c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2881,
+      "file_name": "2251d53f-fad3-4d0b-aa5e-8429395ec426.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2887,
+      "file_name": "710d5d37-d9ab-44fe-83f1-f6f7f950e3a1.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2889,
+      "file_name": "49c54280-9f2c-4597-b7d2-513582291638.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2890,
+      "file_name": "9a535be0-302f-48fc-8e6e-d935a530411c.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2901,
+      "file_name": "8a542073-1035-4d74-9797-51c62512dd55.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2902,
+      "file_name": "1042c179-fa6d-4c62-9e5c-660c68210a69.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2903,
+      "file_name": "334f3e2f-65fe-4c39-8537-339fc41c43c2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2904,
+      "file_name": "5cf60e61-8fed-4c5d-8bc6-6a53c97f636f.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2908,
+      "file_name": "bb9982f8-2253-45d6-8f68-464409d7770b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2910,
+      "file_name": "9353e22e-5080-4884-8220-2a3d7f45c079.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2911,
+      "file_name": "457982ae-b1c8-4132-9523-16fc838a517b.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2915,
+      "file_name": "5f1b2a97-a223-4615-8d42-48eba4e7cb59.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2916,
+      "file_name": "26b8b923-3c96-4938-80f3-fd45a5b3ee52.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2919,
+      "file_name": "ddb439f8-2f38-45f6-91e4-84f5548c6c64.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2927,
+      "file_name": "c69c678d-a583-4bf9-a22c-1f2904ee996f.jpg",
+      "width": 2705,
+      "height": 2388,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2929,
+      "file_name": "86d1cc09-1be7-4f5c-ac57-74caa38678c9.jpg",
+      "width": 4280,
+      "height": 2655,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2930,
+      "file_name": "a6443ca2-a91f-462f-bdcf-237ffc5f9ff2.jpg",
+      "width": 1668,
+      "height": 2388,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2933,
+      "file_name": "1c91ad9d-8a74-40e4-b340-70c5c77be322.jpg",
+      "width": 1668,
+      "height": 2388,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2934,
+      "file_name": "7462f938-774f-486f-89f3-22f56946ad07.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2936,
+      "file_name": "16f1eb3d-fd25-450d-aea9-7f8832170ff6.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2938,
+      "file_name": "b85affc7-084e-484b-91c8-e7194a07d716.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2943,
+      "file_name": "e9bfc627-f943-482d-85b1-35c8dfaa985e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2944,
+      "file_name": "e06c9877-00c4-4f4d-b20d-57eb32b2a582.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2945,
+      "file_name": "6bbf72d0-01fe-4adf-96e8-ad311a1eb544.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2946,
+      "file_name": "342408a2-a32a-4255-8ab4-cf60c78fad21.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2947,
+      "file_name": "22caece7-87ae-48ff-978e-b00ac1102f8e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2949,
+      "file_name": "b9fceb15-d98e-4458-ae87-b7ef5d3b7c1e.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2951,
+      "file_name": "c96c4a18-f27f-437a-838a-8f9e110c45b0.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2958,
+      "file_name": "9461d85c-c9da-4f7b-aef3-4b2dbd2372df.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2959,
+      "file_name": "319dde5b-f566-40f9-ae16-a6edd869053a.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2966,
+      "file_name": "33936444-720e-44dd-9508-8c2d1d4a0524.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2970,
+      "file_name": "3d574552-689d-4f7c-bf78-b161d9b86092.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2974,
+      "file_name": "f5300f81-efb0-4dbb-8e58-7c1b81d7c615.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2981,
+      "file_name": "b765e364-2924-4ec9-b2ad-de1a4da80301.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2988,
+      "file_name": "5b88d084-df73-405f-b94f-c191986100c8.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2990,
+      "file_name": "28190a2b-53d6-46d5-95d4-30e220652541.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2995,
+      "file_name": "acbc8d79-b5f9-4074-9fdd-fd61c9084899.jpg",
+      "width": 3264,
+      "height": 2448,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2996,
+      "file_name": "d40d389e-b757-430b-963d-2dc39883ddf2.jpg",
+      "width": 2448,
+      "height": 3264,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    },
+    {
+      "id": 2997,
+      "file_name": "04992f30-f250-4faf-a902-ccae52665376.jpg",
+      "width": 4219,
+      "height": 2474,
+      "source_dataset": "DPR_MIR_3963_QUALITY_EVALUATION_09072025"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "AbelAbuna_WHI_SinSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 2,
+      "name": "AbelAbuna_WHI_SinSco_BUT_700ml_01_00"
+    },
+    {
+      "id": 3,
+      "name": "AbelAbuna_WHI_SinSco_TUB_700ml_00_00"
+    },
+    {
+      "id": 4,
+      "name": "AbelAbuna_WHI_SinSco_TUB_700ml_01_00"
+    },
+    {
+      "id": 5,
+      "name": "AbelCasgAnn_WHI_SinSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 6,
+      "name": "AbelCasgAnn_WHI_SinSco_BUT_700ml_01_00"
+    },
+    {
+      "id": 7,
+      "name": "AbelCasgAnn_WHI_SinSco_TUB_700ml_00_00"
+    },
+    {
+      "id": 8,
+      "name": "AbelCasgAnn_WHI_SinSco_TUB_700ml_01_00"
+    },
+    {
+      "id": 9,
+      "name": "Abel_WHI_SinSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 10,
+      "name": "Abel_WHI_SinSco_12Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 11,
+      "name": "Abel_WHI_SinSco_12Yo_KAR_2SZK_700ml_00_00"
+    },
+    {
+      "id": 12,
+      "name": "Abel_WHI_SinSco_12Yo_KAR_2SZK_700ml_01_00"
+    },
+    {
+      "id": 13,
+      "name": "Abel_WHI_SinSco_12Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 14,
+      "name": "Abel_WHI_SinSco_12Yo_TUB_700ml_01_00"
+    },
+    {
+      "id": 15,
+      "name": "Abel_WHI_SinSco_14Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 16,
+      "name": "Abel_WHI_SinSco_14Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 17,
+      "name": "Abel_WHI_SinSco_16Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 18,
+      "name": "Abel_WHI_SinSco_16Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 19,
+      "name": "Abel_WHI_SinSco_16Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 20,
+      "name": "Abel_WHI_SinSco_18Yo_BUT_500ml_01_00"
+    },
+    {
+      "id": 21,
+      "name": "Abel_WHI_SinSco_18Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 22,
+      "name": "Abel_WHI_SinSco_18Yo_TUB_500ml_01_00"
+    },
+    {
+      "id": 23,
+      "name": "AbsuElyx_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 24,
+      "name": "AbsuElyx_WOD_Czy_BUT_700ml_01_00"
+    },
+    {
+      "id": 25,
+      "name": "AbsuExtra_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 26,
+      "name": "AbsuGrape_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 27,
+      "name": "AbsuGrape_WOD_Sma_BUT_700ml_01_00"
+    },
+    {
+      "id": 28,
+      "name": "AbsuKuran_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 29,
+      "name": "AbsuLime_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 30,
+      "name": "AbsuLime_WOD_Sma_BUT_700ml_01_00"
+    },
+    {
+      "id": 31,
+      "name": "AbsuPears_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 32,
+      "name": "AbsuPears_WOD_Sma_BUT_700ml_01_00"
+    },
+    {
+      "id": 33,
+      "name": "AbsuWildBer_WOD_Sma_BUT_700ml_00_00"
+    },
+    {
+      "id": 34,
+      "name": "Absu_WOD_Czy_BUT_1000ml_00_00"
+    },
+    {
+      "id": 35,
+      "name": "Absu_WOD_Czy_BUT_1000ml_01_00"
+    },
+    {
+      "id": 36,
+      "name": "Absu_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 37,
+      "name": "Absu_WOD_Czy_BUT_500ml_01_00"
+    },
+    {
+      "id": 38,
+      "name": "Absu_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 39,
+      "name": "Absu_WOD_Czy_BUT_700ml_01_00"
+    },
+    {
+      "id": 40,
+      "name": "Absu_WOD_Czy_KAR_2KIE_700ml_00_00"
+    },
+    {
+      "id": 41,
+      "name": "AraAkhta_BRA_10Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 42,
+      "name": "AraAkhta_BRA_10Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 43,
+      "name": "AraAkhta_BRA_10Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 44,
+      "name": "AraAkhta_BRA_10Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 45,
+      "name": "AraAni_BRA_6Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 46,
+      "name": "AraAni_BRA_6Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 47,
+      "name": "AraAni_BRA_7Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 48,
+      "name": "AraAni_BRA_7Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 49,
+      "name": "AraAni_BRA_7Yo_KAR_SID_700ml_00_00"
+    },
+    {
+      "id": 50,
+      "name": "AraNairi_BRA_20Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 51,
+      "name": "AraNairi_BRA_20Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 52,
+      "name": "AraNairi_BRA_20Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 53,
+      "name": "AraNairi_BRA_20Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 54,
+      "name": "AraVaspu_BRA_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 55,
+      "name": "AraVaspu_BRA_15Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 56,
+      "name": "AraVaspu_BRA_15Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 57,
+      "name": "AraVaspu_BRA_15Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 58,
+      "name": "Ara_BRA_3Yo_BUT_500ml_00_00"
+    },
+    {
+      "id": 59,
+      "name": "Ara_BRA_3Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 60,
+      "name": "Ara_BRA_3Yo_KAR_500ml_00_00"
+    },
+    {
+      "id": 61,
+      "name": "Ara_BRA_3Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 62,
+      "name": "Ara_BRA_3Yo_KAR_SID_500ml_00_00"
+    },
+    {
+      "id": 63,
+      "name": "Ara_BRA_3Yo_KAR_SID_700ml_00_00"
+    },
+    {
+      "id": 64,
+      "name": "Ara_BRA_5Yo_BUT_500ml_00_00"
+    },
+    {
+      "id": 65,
+      "name": "Ara_BRA_5Yo_BUT_500ml_01_00"
+    },
+    {
+      "id": 66,
+      "name": "Ara_BRA_5Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 67,
+      "name": "Ara_BRA_5Yo_KAR_500ml_00_00"
+    },
+    {
+      "id": 68,
+      "name": "Ara_BRA_5Yo_KAR_500ml_01_00"
+    },
+    {
+      "id": 69,
+      "name": "Ara_BRA_5Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 70,
+      "name": "Ara_BRA_5Yo_KAR_SID_500ml_00_00"
+    },
+    {
+      "id": 71,
+      "name": "Ara_BRA_5Yo_KAR_SID_700ml_00_00"
+    },
+    {
+      "id": 72,
+      "name": "BallBrasi_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 73,
+      "name": "BallBrasi_WHI_BleSco_BUT_700ml_01_00"
+    },
+    {
+      "id": 74,
+      "name": "BallFinesACDC_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 75,
+      "name": "BallFinesQue_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 76,
+      "name": "BallFines_WHI_BleSco_BUT_1000ml_00_00"
+    },
+    {
+      "id": 77,
+      "name": "BallFines_WHI_BleSco_BUT_1500ml_00_00"
+    },
+    {
+      "id": 78,
+      "name": "BallFines_WHI_BleSco_BUT_200ml_00_00"
+    },
+    {
+      "id": 79,
+      "name": "BallFines_WHI_BleSco_BUT_500ml_00_00"
+    },
+    {
+      "id": 80,
+      "name": "BallFines_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 81,
+      "name": "BallFines_WHI_BleSco_BUT_700ml_01_00"
+    },
+    {
+      "id": 82,
+      "name": "BallFines_WHI_BleSco_BUT_700ml_02_00"
+    },
+    {
+      "id": 83,
+      "name": "BallFines_WHI_BleSco_KAR_SZKMIN_700ml_00_00"
+    },
+    {
+      "id": 84,
+      "name": "BallFines_WHI_BleSco_KAR_SZK_700ml_01_00"
+    },
+    {
+      "id": 85,
+      "name": "BallGlenb_WHI_SinSco_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 86,
+      "name": "BallGlenb_WHI_SinSco_15Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 87,
+      "name": "BallGlent_WHI_SinSco_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 88,
+      "name": "BallGlent_WHI_SinSco_15Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 89,
+      "name": "BallMilto_WHI_SinSco_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 90,
+      "name": "BallMilto_WHI_SinSco_15Yo_TUB_700ml_00_00"
+    },
+    {
+      "id": 91,
+      "name": "BallPassi_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 92,
+      "name": "BallSunsh_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 93,
+      "name": "BallSweetBle_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 94,
+      "name": "BallWild_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 95,
+      "name": "Ball_WHI_BleSco_10Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 96,
+      "name": "Ball_WHI_BleSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 97,
+      "name": "Ball_WHI_BleSco_12Yo_KAR_2SZK_700ml_01_00"
+    },
+    {
+      "id": 98,
+      "name": "Ball_WHI_BleSco_12Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 99,
+      "name": "Ball_WHI_BleSco_12Yo_KAR_PIE_700ml_01_00"
+    },
+    {
+      "id": 100,
+      "name": "Ball_WHI_BleSco_12Yo_KAR_PIE_700ml_02_00"
+    },
+    {
+      "id": 101,
+      "name": "Ball_WHI_BleSco_17Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 102,
+      "name": "Ball_WHI_BleSco_17Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 103,
+      "name": "Ball_WHI_BleSco_17Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 104,
+      "name": "Ball_WHI_BleSco_17Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 105,
+      "name": "Ball_WHI_BleSco_21Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 106,
+      "name": "Ball_WHI_BleSco_21Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 107,
+      "name": "Ball_WHI_BleSco_21Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 108,
+      "name": "Ball_WHI_BleSco_21Yo_KAR_700ml_02_00"
+    },
+    {
+      "id": 109,
+      "name": "Ball_WHI_BleSco_30Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 110,
+      "name": "Ball_WHI_BleSco_30Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 111,
+      "name": "Ball_WHI_BleSco_30Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 112,
+      "name": "Ball_WHI_BleSco_7Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 113,
+      "name": "Bec_LIK_BUT_500ml_00_00"
+    },
+    {
+      "id": 114,
+      "name": "Bec_LIK_BUT_700ml_00_00"
+    },
+    {
+      "id": 115,
+      "name": "Bee24_GIN_BUT_700ml_01_00"
+    },
+    {
+      "id": 116,
+      "name": "BeeBloodOra_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 117,
+      "name": "BeePink_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 118,
+      "name": "BeePink_GIN_BUT_700ml_02_00"
+    },
+    {
+      "id": 119,
+      "name": "Bee_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 120,
+      "name": "Bee_GIN_BUT_700ml_03_00"
+    },
+    {
+      "id": 121,
+      "name": "BumCream_RUM_BUT_700ml_00_00"
+    },
+    {
+      "id": 122,
+      "name": "BumOrigi_RUM_BUT_700ml_00_00"
+    },
+    {
+      "id": 123,
+      "name": "BumXo_RUM_BUT_700ml_00_00"
+    },
+    {
+      "id": 124,
+      "name": "ChiRegExtraAmeRyeCas_WHI_BleSco_13Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 125,
+      "name": "ChiRegExtraAmeRyeCas_WHI_BleSco_13Yo_BUT_700ml_02_00"
+    },
+    {
+      "id": 126,
+      "name": "ChiRegExtraAmeRyeCas_WHI_BleSco_13Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 127,
+      "name": "ChiRegExtraAmeRyeCas_WHI_BleSco_13Yo_KAR_700ml_02_00"
+    },
+    {
+      "id": 128,
+      "name": "ChiRegExtraBou_WHI_BleSco_13Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 129,
+      "name": "ChiRegExtraBou_WHI_BleSco_13Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 130,
+      "name": "ChiRegExtraShe_WHI_BleSco_13Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 131,
+      "name": "ChiRegExtraShe_WHI_BleSco_13Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 132,
+      "name": "ChiRegExtraShe_WHI_BleSco_13Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 133,
+      "name": "ChiRegExtraShe_WHI_BleSco_13Yo_KAR_700ml_02_00"
+    },
+    {
+      "id": 134,
+      "name": "ChiRegMizun_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 135,
+      "name": "ChiRegMizun_WHI_BleSco_KAR_700ml_00_00"
+    },
+    {
+      "id": 136,
+      "name": "ChiRegUltis_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 137,
+      "name": "ChiRegUltis_WHI_BleSco_KAR_700ml_00_00"
+    },
+    {
+      "id": 138,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 139,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 140,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 141,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 142,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_KAR_700ml_02_00"
+    },
+    {
+      "id": 143,
+      "name": "ChiRegXv_WHI_BleSco_15Yo_KAR_700ml_03_00"
+    },
+    {
+      "id": 144,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_1000ml_00_00"
+    },
+    {
+      "id": 145,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_1000ml_02_00"
+    },
+    {
+      "id": 146,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_200ml_00_00"
+    },
+    {
+      "id": 147,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_500ml_00_00"
+    },
+    {
+      "id": 148,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_500ml_02_00"
+    },
+    {
+      "id": 149,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 150,
+      "name": "ChiReg_WHI_BleSco_12Yo_BUT_700ml_02_00"
+    },
+    {
+      "id": 151,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_1000ml_15_00"
+    },
+    {
+      "id": 152,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_1000ml_16_00"
+    },
+    {
+      "id": 153,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_2SZK_700ml_01_00"
+    },
+    {
+      "id": 154,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_2SZK_700ml_03_00"
+    },
+    {
+      "id": 155,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_2SZK_700ml_08_00"
+    },
+    {
+      "id": 156,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 157,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 158,
+      "name": "ChiReg_WHI_BleSco_12Yo_KAR_700ml_15_00"
+    },
+    {
+      "id": 159,
+      "name": "ChiReg_WHI_BleSco_18Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 160,
+      "name": "ChiReg_WHI_BleSco_18Yo_KAR_2SZK_700ml_01_00"
+    },
+    {
+      "id": 161,
+      "name": "ChiReg_WHI_BleSco_18Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 162,
+      "name": "ChiReg_WHI_BleSco_18Yo_KAR_700ml_02_00"
+    },
+    {
+      "id": 163,
+      "name": "ChiReg_WHI_BleSco_18Yo_KAR_700ml_08_00"
+    },
+    {
+      "id": 164,
+      "name": "ChiReg_WHI_BleSco_25Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 165,
+      "name": "ChiReg_WHI_BleSco_25Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 166,
+      "name": "FouRosSinglBar_WHI_Bou_BUT_700ml_00_00"
+    },
+    {
+      "id": 167,
+      "name": "FouRosSmallBat_WHI_Bou_BUT_700ml_00_00"
+    },
+    {
+      "id": 168,
+      "name": "Gol_RUM_BUT_200ml_00_00"
+    },
+    {
+      "id": 169,
+      "name": "Gol_RUM_BUT_500ml_00_00"
+    },
+    {
+      "id": 170,
+      "name": "Gol_RUM_BUT_500ml_02_00"
+    },
+    {
+      "id": 171,
+      "name": "HavClubEsp_RUM_BUT_700ml_00_00"
+    },
+    {
+      "id": 172,
+      "name": "HavClubEsp_RUM_BUT_700ml_02_00"
+    },
+    {
+      "id": 173,
+      "name": "HavClubSelDeMae_RUM_BUT_700ml_01_00"
+    },
+    {
+      "id": 174,
+      "name": "HavClubSelDeMae_RUM_BUT_700ml_02_00"
+    },
+    {
+      "id": 175,
+      "name": "HavClubSelDeMae_RUM_KAR_700ml_00_00"
+    },
+    {
+      "id": 176,
+      "name": "HavClubSelDeMae_RUM_TUB_700ml_00_00"
+    },
+    {
+      "id": 177,
+      "name": "HavClubSelDeMae_RUM_TUB_700ml_01_00"
+    },
+    {
+      "id": 178,
+      "name": "HavClub_RUM_3Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 179,
+      "name": "HavClub_RUM_3Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 180,
+      "name": "HavClub_RUM_7Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 181,
+      "name": "JacCreSauviMosTwiPic_WIN_MusWytBia_BUT_750ml_00_00"
+    },
+    {
+      "id": 182,
+      "name": "JamBlackBar_WHI_BleIri_BUT_700ml_01_00"
+    },
+    {
+      "id": 183,
+      "name": "JamBlackBar_WHI_BleIri_KAR_700ml_00_00"
+    },
+    {
+      "id": 184,
+      "name": "JamBlackBar_WHI_BleIri_KAR_700ml_01_00"
+    },
+    {
+      "id": 185,
+      "name": "JamBlendDog_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 186,
+      "name": "JamCaskmIpa_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 187,
+      "name": "JamCaskmIpa_WHI_BleIri_BUT_700ml_01_00"
+    },
+    {
+      "id": 188,
+      "name": "JamCaskmIpa_WHI_BleIri_KAR_700ml_00_00"
+    },
+    {
+      "id": 189,
+      "name": "JamCaskmIpa_WHI_BleIri_KAR_700ml_01_00"
+    },
+    {
+      "id": 190,
+      "name": "JamCaskmSto_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 191,
+      "name": "JamCaskmSto_WHI_BleIri_BUT_700ml_02_00"
+    },
+    {
+      "id": 192,
+      "name": "JamCaskmSto_WHI_BleIri_BUT_700ml_03_00"
+    },
+    {
+      "id": 193,
+      "name": "JamCaskmSto_WHI_BleIri_KAR_700ml_00_00"
+    },
+    {
+      "id": 194,
+      "name": "JamCaskmSto_WHI_BleIri_KAR_700ml_01_00"
+    },
+    {
+      "id": 195,
+      "name": "JamCoopeCro_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 196,
+      "name": "JamCrest_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 197,
+      "name": "JamCrest_WHI_BleIri_BUT_700ml_01_00"
+    },
+    {
+      "id": 198,
+      "name": "JamCrest_WHI_BleIri_KAR_700ml_00_00"
+    },
+    {
+      "id": 199,
+      "name": "JamCrest_WHI_BleIri_KAR_700ml_01_00"
+    },
+    {
+      "id": 200,
+      "name": "JamDistiSaf_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 201,
+      "name": "JamOrang_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 202,
+      "name": "Jam_WHI_BleIri_BUT_1000ml_00_00"
+    },
+    {
+      "id": 203,
+      "name": "Jam_WHI_BleIri_BUT_200ml_01_00"
+    },
+    {
+      "id": 204,
+      "name": "Jam_WHI_BleIri_BUT_500ml_00_00"
+    },
+    {
+      "id": 205,
+      "name": "Jam_WHI_BleIri_BUT_700ml_00_00"
+    },
+    {
+      "id": 206,
+      "name": "Jam_WHI_BleIri_KAR_MIN_700ml_00_00"
+    },
+    {
+      "id": 207,
+      "name": "Jam_WHI_BleIri_KAR_MIN_700ml_01_00"
+    },
+    {
+      "id": 208,
+      "name": "Kah_LIK_BUT_700ml_00_00"
+    },
+    {
+      "id": 209,
+      "name": "Kah_LIK_BUT_700ml_02_00"
+    },
+    {
+      "id": 210,
+      "name": "LilBlanc_LIK_BUT_750ml_01_00"
+    },
+    {
+      "id": 211,
+      "name": "LilBlanc_LIK_BUT_750ml_02_00"
+    },
+    {
+      "id": 212,
+      "name": "LilRose_LIK_BUT_750ml_00_00"
+    },
+    {
+      "id": 213,
+      "name": "LilRose_LIK_BUT_750ml_01_00"
+    },
+    {
+      "id": 214,
+      "name": "Luk_WOD_Czy_BUT_1000ml_00_00"
+    },
+    {
+      "id": 215,
+      "name": "Luk_WOD_Czy_BUT_200ml_00_00"
+    },
+    {
+      "id": 216,
+      "name": "Luk_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 217,
+      "name": "Luk_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 218,
+      "name": "MalLime_LIK_BUT_700ml_00_00"
+    },
+    {
+      "id": 219,
+      "name": "MalPassiFru_LIK_BUT_700ml_01_00"
+    },
+    {
+      "id": 220,
+      "name": "Mal_LIK_BUT_500ml_00_00"
+    },
+    {
+      "id": 221,
+      "name": "Mal_LIK_BUT_700ml_00_00"
+    },
+    {
+      "id": 222,
+      "name": "MalfConAra_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 223,
+      "name": "MalfConLim_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 224,
+      "name": "MalfOrigiIta_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 225,
+      "name": "MalfRosaIta_GIN_BUT_700ml_00_00"
+    },
+    {
+      "id": 226,
+      "name": "MarBlueSwi_KON_BUT_700ml_00_00"
+    },
+    {
+      "id": 227,
+      "name": "MarBlueSwi_KON_KAR_700ml_00_00"
+    },
+    {
+      "id": 228,
+      "name": "MarCordoBle_KON_BUT_700ml_00_00"
+    },
+    {
+      "id": 229,
+      "name": "MarCordoBle_KON_KAR_700ml_00_00"
+    },
+    {
+      "id": 230,
+      "name": "MarMedai_KON_BUT_700ml_02_00"
+    },
+    {
+      "id": 231,
+      "name": "MarMedai_KON_BUT_700ml_03_00"
+    },
+    {
+      "id": 232,
+      "name": "MarMedai_KON_KAR_700ml_03_00"
+    },
+    {
+      "id": 233,
+      "name": "MarMedai_KON_KAR_700ml_04_00"
+    },
+    {
+      "id": 234,
+      "name": "MarMedai_KON_KAR_700ml_05_00"
+    },
+    {
+      "id": 235,
+      "name": "MarMedai_KON_KAR_700ml_06_00"
+    },
+    {
+      "id": 236,
+      "name": "MarVsSinDis_KON_BUT_700ml_00_00"
+    },
+    {
+      "id": 237,
+      "name": "MarVsSinDis_KON_KAR_700ml_02_00"
+    },
+    {
+      "id": 238,
+      "name": "MarVs_KON_BUT_700ml_00_00"
+    },
+    {
+      "id": 239,
+      "name": "MarVs_KON_KAR_700ml_00_00"
+    },
+    {
+      "id": 240,
+      "name": "MarVs_KON_KAR_700ml_01_00"
+    },
+    {
+      "id": 241,
+      "name": "MarVsopRedBar_KON_KAR_2SZK_700ml_00_00"
+    },
+    {
+      "id": 242,
+      "name": "MarXo_KON_BUT_700ml_00_00"
+    },
+    {
+      "id": 243,
+      "name": "MarXo_KON_BUT_700ml_01_00"
+    },
+    {
+      "id": 244,
+      "name": "MarXo_KON_KAR_700ml_00_00"
+    },
+    {
+      "id": 245,
+      "name": "Mon47Dry_GIN_BUT_500ml_00_00"
+    },
+    {
+      "id": 246,
+      "name": "Mon47Sloe_GIN_BUT_500ml_00_00"
+    },
+    {
+      "id": 247,
+      "name": "MumDemiSec_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 248,
+      "name": "MumGrandCorRos_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 249,
+      "name": "MumGrandCor_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 250,
+      "name": "MumGrandCor_SZA_KAR_750ml_00_00"
+    },
+    {
+      "id": 251,
+      "name": "MumIceExt_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 252,
+      "name": "MumOlymp_SZA_BUT_750ml_01_00"
+    },
+    {
+      "id": 253,
+      "name": "MumRose_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 254,
+      "name": "MumRouge_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 255,
+      "name": "MumRouge_SZA_KAR_750ml_02_00"
+    },
+    {
+      "id": 256,
+      "name": "OlmAltosPla_TEQ_BUT_700ml_00_00"
+    },
+    {
+      "id": 257,
+      "name": "OlmAltosRep_TEQ_BUT_700ml_00_00"
+    },
+    {
+      "id": 258,
+      "name": "OlmBlanc_TEQ_BUT_700ml_00_00"
+    },
+    {
+      "id": 259,
+      "name": "OlmBlanc_TEQ_BUT_700ml_02_00"
+    },
+    {
+      "id": 260,
+      "name": "OlmGold_TEQ_BUT_700ml_00_00"
+    },
+    {
+      "id": 261,
+      "name": "OlmGold_TEQ_BUT_700ml_02_00"
+    },
+    {
+      "id": 262,
+      "name": "OstBlack_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 263,
+      "name": "Ost_WOD_Czy_BUT_1000ml_00_00"
+    },
+    {
+      "id": 264,
+      "name": "Ost_WOD_Czy_BUT_1750ml_00_00"
+    },
+    {
+      "id": 265,
+      "name": "Ost_WOD_Czy_BUT_3000ml_00_00"
+    },
+    {
+      "id": 266,
+      "name": "Ost_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 267,
+      "name": "Ost_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 268,
+      "name": "Ost_WOD_Czy_KAR_KIEMIO_700ml_00_00"
+    },
+    {
+      "id": 269,
+      "name": "PanTadAroni_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 270,
+      "name": "PanTadAroni_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 271,
+      "name": "PanTadAroni_WOD_Sma_BUT_500ml_02_00"
+    },
+    {
+      "id": 272,
+      "name": "PanTadPrzep_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 273,
+      "name": "PanTadPrzep_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 274,
+      "name": "PanTad_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 275,
+      "name": "PanTad_WOD_Czy_BUT_500ml_05_00"
+    },
+    {
+      "id": 276,
+      "name": "PanTad_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 277,
+      "name": "PanTad_WOD_Czy_BUT_700ml_02_00"
+    },
+    {
+      "id": 278,
+      "name": "PanTad_WOD_Czy_BUT_700ml_06_00"
+    },
+    {
+      "id": 279,
+      "name": "PanZosSlonyKar_LIK_BUT_500ml_00_00"
+    },
+    {
+      "id": 280,
+      "name": "Pas_WHI_BleSco_BUT_1000ml_00_00"
+    },
+    {
+      "id": 281,
+      "name": "Pas_WHI_BleSco_BUT_200ml_00_00"
+    },
+    {
+      "id": 282,
+      "name": "Pas_WHI_BleSco_BUT_500ml_00_00"
+    },
+    {
+      "id": 283,
+      "name": "Pas_WHI_BleSco_BUT_500ml_02_00"
+    },
+    {
+      "id": 284,
+      "name": "Pas_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 285,
+      "name": "Pas_WHI_BleSco_BUT_700ml_02_00"
+    },
+    {
+      "id": 286,
+      "name": "PerJouBelleEpo_SZA_BUT_750ml_00_00"
+    },
+    {
+      "id": 287,
+      "name": "PerJouGrandBru_SZA_BUT_750ml_01_00"
+    },
+    {
+      "id": 288,
+      "name": "Red_WHI_SinIri_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 289,
+      "name": "Red_WHI_SinIri_12Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 290,
+      "name": "Red_WHI_SinIri_12Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 291,
+      "name": "Red_WHI_SinIri_12Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 292,
+      "name": "Ric_LIK_BUT_700ml_00_00"
+    },
+    {
+      "id": 293,
+      "name": "RoySal_WHI_BleSco_21Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 294,
+      "name": "RoySal_WHI_BleSco_21Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 295,
+      "name": "RoySal_WHI_BleSco_21Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 296,
+      "name": "ScaGlans_WHI_SinSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 297,
+      "name": "ScaGlans_WHI_SinSco_KAR_700ml_00_00"
+    },
+    {
+      "id": 298,
+      "name": "ScaSkire_WHI_SinSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 299,
+      "name": "ScaSkire_WHI_SinSco_KAR_700ml_00_00"
+    },
+    {
+      "id": 300,
+      "name": "SeaGinLime_GIN_BUT_350ml_01_00"
+    },
+    {
+      "id": 301,
+      "name": "SeaGinLime_GIN_BUT_700ml_01_00"
+    },
+    {
+      "id": 302,
+      "name": "SeaGin_GIN_BUT_350ml_01_00"
+    },
+    {
+      "id": 303,
+      "name": "SeaGin_GIN_BUT_700ml_01_00"
+    },
+    {
+      "id": 304,
+      "name": "Siw_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 305,
+      "name": "TheDea_WHI_BleSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 306,
+      "name": "TheGleFoundRes_WHI_SinSco_BUT_700ml_00_00"
+    },
+    {
+      "id": 307,
+      "name": "TheGleFoundRes_WHI_SinSco_BUT_700ml_01_00"
+    },
+    {
+      "id": 308,
+      "name": "TheGleFoundRes_WHI_SinSco_KAR_700ml_00_00"
+    },
+    {
+      "id": 309,
+      "name": "TheGleFoundRes_WHI_SinSco_KAR_700ml_01_00"
+    },
+    {
+      "id": 310,
+      "name": "TheGleIllicSti_WHI_SinSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 311,
+      "name": "TheGleLicenDra_WHI_SinSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 312,
+      "name": "TheGleLicenDra_WHI_SinSco_12Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 313,
+      "name": "TheGleSinglCasSheBut_WHI_SinSco_14Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 314,
+      "name": "TheGleSinglCasSheBut_WHI_SinSco_14Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 315,
+      "name": "TheGle_WHI_SinSco_12Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 316,
+      "name": "TheGle_WHI_SinSco_12Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 317,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_2SZK_700ml_00_00"
+    },
+    {
+      "id": 318,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_2SZK_700ml_02_00"
+    },
+    {
+      "id": 319,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_2SZK_700ml_03_00"
+    },
+    {
+      "id": 320,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 321,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_700ml_01_00"
+    },
+    {
+      "id": 322,
+      "name": "TheGle_WHI_SinSco_12Yo_KAR_SKA_700ml_00_00"
+    },
+    {
+      "id": 323,
+      "name": "TheGle_WHI_SinSco_15Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 324,
+      "name": "TheGle_WHI_SinSco_15Yo_BUT_700ml_01_00"
+    },
+    {
+      "id": 325,
+      "name": "TheGle_WHI_SinSco_15Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 326,
+      "name": "TheGle_WHI_SinSco_18Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 327,
+      "name": "TheGle_WHI_SinSco_18Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 328,
+      "name": "TheGle_WHI_SinSco_21Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 329,
+      "name": "TheGle_WHI_SinSco_21Yo_KAR_700ml_00_00"
+    },
+    {
+      "id": 330,
+      "name": "TheGle_WHI_SinSco_25Yo_BUT_700ml_00_00"
+    },
+    {
+      "id": 331,
+      "name": "TheGle_WHI_SinSco_25Yo_SKR_700ml_00_00"
+    },
+    {
+      "id": 332,
+      "name": "WybCytry_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 333,
+      "name": "WybCzarnPor_WOD_Sma_BUT_200ml_00_00"
+    },
+    {
+      "id": 334,
+      "name": "WybCzarnPor_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 335,
+      "name": "WybCzarnPor_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 336,
+      "name": "WybCzarnPor_WOD_Sma_BUT_500ml_02_00"
+    },
+    {
+      "id": 337,
+      "name": "WybExqui_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 338,
+      "name": "WybExqui_WOD_Czy_KAR_700ml_00_00"
+    },
+    {
+      "id": 339,
+      "name": "WybGrusz_WOD_Sma_BUT_200ml_00_00"
+    },
+    {
+      "id": 340,
+      "name": "WybGrusz_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 341,
+      "name": "WybGrusz_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 342,
+      "name": "WybGrusz_WOD_Sma_BUT_500ml_02_00"
+    },
+    {
+      "id": 343,
+      "name": "WybOdMis_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 344,
+      "name": "WybProst_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 345,
+      "name": "WybProst_WOD_Czy_BUT_500ml_02_00"
+    },
+    {
+      "id": 346,
+      "name": "WybProst_WOD_Czy_BUT_700ml_01_00"
+    },
+    {
+      "id": 347,
+      "name": "WybProst_WOD_Czy_BUT_700ml_02_00"
+    },
+    {
+      "id": 348,
+      "name": "WybPszen_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 349,
+      "name": "WybPszen_WOD_Czy_BUT_500ml_01_00"
+    },
+    {
+      "id": 350,
+      "name": "WybPszen_WOD_Czy_BUT_500ml_02_00"
+    },
+    {
+      "id": 351,
+      "name": "WybSliwk_WOD_Sma_BUT_200ml_00_00"
+    },
+    {
+      "id": 352,
+      "name": "WybSliwk_WOD_Sma_BUT_200ml_01_00"
+    },
+    {
+      "id": 353,
+      "name": "WybSliwk_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 354,
+      "name": "WybSliwk_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 355,
+      "name": "WybSliwk_WOD_Sma_BUT_500ml_02_00"
+    },
+    {
+      "id": 356,
+      "name": "WybWisni_WOD_Sma_BUT_200ml_00_00"
+    },
+    {
+      "id": 357,
+      "name": "WybWisni_WOD_Sma_BUT_200ml_01_00"
+    },
+    {
+      "id": 358,
+      "name": "WybWisni_WOD_Sma_BUT_500ml_00_00"
+    },
+    {
+      "id": 359,
+      "name": "WybWisni_WOD_Sma_BUT_500ml_01_00"
+    },
+    {
+      "id": 360,
+      "name": "WybWisni_WOD_Sma_BUT_500ml_02_00"
+    },
+    {
+      "id": 361,
+      "name": "WybWisni_WOD_Sma_BUT_500ml_03_00"
+    },
+    {
+      "id": 362,
+      "name": "WybZiemn_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 363,
+      "name": "WybZiemn_WOD_Czy_BUT_500ml_01_00"
+    },
+    {
+      "id": 364,
+      "name": "WybZiemn_WOD_Czy_BUT_500ml_02_00"
+    },
+    {
+      "id": 365,
+      "name": "Wyb_WOD_Czy_BUT_1000ml_00_00"
+    },
+    {
+      "id": 366,
+      "name": "Wyb_WOD_Czy_BUT_200ml_00_00"
+    },
+    {
+      "id": 367,
+      "name": "Wyb_WOD_Czy_BUT_500ml_00_00"
+    },
+    {
+      "id": 368,
+      "name": "Wyb_WOD_Czy_BUT_700ml_00_00"
+    },
+    {
+      "id": 369,
+      "name": "Wyb_WOD_Czy_BUT_700ml_01_00"
+    }
+  ]
+}

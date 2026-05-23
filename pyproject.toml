@@ -1,6 +1,30 @@
 [project]
-name = "hackology2"
+name = "hackology-team"
 version = "0.1.0"
-description = "Solution for Hackology 2 Hackathon"
-requires-python = ">=3.12"
-dependencies = []
+description = "Hackology II — Object Detection Challenge"
+requires-python = ">=3.11"
+dependencies = [
+    "ultralytics>=8.3",
+    "pycocotools>=2.0.11",
+    "Pillow>=10.0",
+]
+
+[project.scripts]
+predict = "predict:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["predict.py"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "jupyter>=1.0",
+    "matplotlib>=3.9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
