@@ -9,6 +9,7 @@ def train1():
     model1 = YOLO("yolov8l.pt")
     model1.train(
         data="bottles.yaml",
+        device=0,
         epochs=EPOCHS,
         imgsz=IMGSZ,
         batch=BATCH,
@@ -25,6 +26,7 @@ def train2():
     model2.train(
         data="bottles.yaml",
         epochs=EPOCHS,
+        device=0,
         imgsz=IMGSZ,
         batch=BATCH,
         seed=123,
@@ -38,6 +40,7 @@ def train3():
     model3 = YOLO("rtdetr-l.pt")
     model3.train(
         data="bottles.yaml",
+        device=0,
         epochs=EPOCHS,
         imgsz=IMGSZ,
         batch=BATCH,
