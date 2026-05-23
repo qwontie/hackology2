@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 from pathlib import Path
 
-EPOCHS = 30
-IMGSZ  = 640
+EPOCHS = 50
+IMGSZ  = 1280
 BATCH  = 32
 
 def train1():
