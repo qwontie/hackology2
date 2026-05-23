@@ -2,7 +2,7 @@ import json
 import yaml
 from pathlib import Path
 def generate_yaml():
-    with open("taxonomy.json") as f:
+    with open("../taxonomy.json") as f:
         taxonomy = json.load(f)
 
     cat_ids = sorted(c["id"] for c in taxonomy["categories"])
@@ -19,7 +19,7 @@ def generate_yaml():
         "names": names,
     }
 
-    with open("bottles.yaml", "w") as f:
+    with open("../bottles.yaml", "w") as f:
         yaml.dump(bottles_yaml, f, allow_unicode=True)
 
     print(f"Ready: {len(names)} classes")
