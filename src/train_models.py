@@ -1,9 +1,9 @@
-from ultralytics import YOLO
+from ultralytics import YOLO, RTDETR
 from pathlib import Path
 
-EPOCHS = 50
+EPOCHS = 75
 IMGSZ  = 1280
-BATCH  = 32
+BATCH  = 15
 
 def train1():
     model1 = YOLO("yolov8l.pt")
@@ -37,7 +37,7 @@ def train2():
         save=True,
     )
 def train3():
-    model3 = YOLO("rtdetr-l.pt")
+    model3 = RTDETR("rtdetr-l.pt")
     model3.train(
         data="bottles.yaml",
         device=0,
