@@ -8,16 +8,14 @@ BATCH  = 32
 def train1():
     model1 = YOLO("yolov8l.pt")
     model1.train(
-        data="dataset.yaml",
+        data="bottles.yaml",
         epochs=EPOCHS,
         imgsz=IMGSZ,
         batch=BATCH,
         seed=42,
-        # аугментация
         hsv_h=0.015, hsv_s=0.7, hsv_v=0.4,
         fliplr=0.5,  flipud=0.0,
         mosaic=1.0,  mixup=0.0,
-        # сохранение
         project="runs", name="model1",
         save=True,
     )
@@ -25,7 +23,7 @@ def train1():
 def train2():
     model2 = YOLO("yolov8m.pt")
     model2.train(
-        data="dataset.yaml",
+        data="bottles.yaml",
         epochs=EPOCHS,
         imgsz=IMGSZ,
         batch=BATCH,
@@ -39,7 +37,7 @@ def train2():
 def train3():
     model3 = YOLO("rtdetr-l.pt")
     model3.train(
-        data="dataset.yaml",
+        data="bottles.yaml",
         epochs=EPOCHS,
         imgsz=IMGSZ,
         batch=BATCH,
