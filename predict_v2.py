@@ -69,6 +69,10 @@ WEIGHT_ALIASES = {
     "yolov8l":       f"{WEIGHTS_RELEASE}/yolov8l_train1_best.pt",
     "yolo11l":       f"{WEIGHTS_RELEASE}/yolo11l_student_best.pt",
     "rtdetr":        f"{WEIGHTS_RELEASE}/rtdetr_l_best.pt",
+    # +0.0074 diversity hero (4-model champion 0.8116 -> public LB):
+    "yolo11x_v2":    f"{WEIGHTS_RELEASE}/yolo11x_v2_best.pt",
+    # +0.0056 diversity hero (5-model champion 0.8172 -> public LB):
+    "yolov8x_cb":    f"{WEIGHTS_RELEASE}/yolov8x_cb_best.pt",
 }
 WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
 
@@ -78,9 +82,11 @@ WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
 # at 2026-05-24 02:30 measured heavy 2-model = 35 min, OVER the 30-min finals
 # budget. balanced 2-model = ~12 min, safe headroom. Override with PREDICT_MODE=heavy
 # only if you've actually re-profiled on the target box.
-DEFAULT_MODE = os.environ.get("PREDICT_MODE", "balanced")
-DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher").split()
-DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "")  # e.g. "2 1 0.5"
+DEFAULT_MODE = os.environ.get("PREDICT_MODE", "semiheavy")
+# 5-model public-LB champion @ 0.8172. Each addition was verified +δ:
+#   student+teacher baseline, +yolo11l (+0.017), +yolo11x_v2 (+0.0074), +yolov8x_cb (+0.0056).
+DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher yolo11l yolo11x_v2 yolov8x_cb").split()
+DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "1.0 1.5 0.7 0.5 0.5")
 
 
 def is_rtdetr_weight(name_or_path: str) -> bool:
