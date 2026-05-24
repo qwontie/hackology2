@@ -19,11 +19,19 @@ Modes are presets that set the above flags (timings: 481 imgs on H100, T4 ~2-3x 
   balanced: single-scale 1536 + hflip, max_det=400
   heavy:    multi-scale [1280,1536,1920] + hflip + WBF, max_det=500
 
-For T4 finals (16GB, 30min), profile on Colab first. Suggested escalation ladder:
-  L1: --mode balanced --model student                            (fastest decent)
-  L2: --mode heavy    --model student                            (single-model heavy)
-  L3: --mode balanced --models student teacher                   (2-model ensemble)
-  L4: --mode heavy    --models student teacher                   (heaviest)
+For T4 finals (16GB, 30min), profile on Colab first.
+
+IMPORTANT — ultralytics `augment=True` is NOT just a horizontal flip. It triggers
+the built-in TTA (3 scale-pass + flip ≈ 4 forward passes). So `heavy` mode with
+external `scales=[1280, 1536, 1920]` and `ult_tta=True` does 3 × 4 = 12 forward
+passes PER MODEL. With 2 models = 24 fwd passes per image — confirmed 35 min on
+T4. DO NOT use heavy on T4.
+
+Mode pass-count per model (per image):
+  safe       1   (single imgsz=1280, no TTA)
+  balanced   4   (imgsz=1536 + ult_tta — ultralytics 3-scale + flip)
+  semiheavy  2   (external scales [1280, 1536], no ult_tta — predictable)
+  heavy      12  (external scales × ult_tta — DON'T use on T4)
 
 ALWAYS filters w<1 or h<1 bboxes (eval validator rejects them — see epoch5 incident).
 """
@@ -118,9 +126,12 @@ except ImportError:
 
 # ---------- mode presets ----------
 MODES = {
-    "safe":     {"imgsz": 1280, "flip": False, "scales": None,                 "max_det": 300},
-    "balanced": {"imgsz": 1536, "flip": True,  "scales": None,                 "max_det": 400},
-    "heavy":    {"imgsz": 1536, "flip": True,  "scales": [1280, 1536, 1920],   "max_det": 500},
+    # `ult_tta` controls ultralytics built-in TTA (augment=True ≈ 3-scale + flip).
+    # `scales` is our explicit external loop. Total passes/model = len(scales or [imgsz]) × (4 if ult_tta else 1).
+    "safe":      {"imgsz": 1280, "ult_tta": False, "scales": None,               "max_det": 300},  # 1
+    "balanced":  {"imgsz": 1536, "ult_tta": True,  "scales": None,               "max_det": 400},  # 4
+    "semiheavy": {"imgsz": 1536, "ult_tta": False, "scales": [1280, 1536],       "max_det": 500},  # 2 — predictable, T4-safe
+    "heavy":     {"imgsz": 1536, "ult_tta": True,  "scales": [1280, 1536, 1920], "max_det": 500},  # 12 — H100 only
 }
 
 
@@ -157,13 +168,15 @@ def boxes_to_normalized(boxes_xyxy, img_w: int, img_h: int):
 
 
 def predict_one_pass(model: YOLO, img_path: str, imgsz: int, conf: float,
-                     max_det: int, flip: bool, device: int = 0) -> tuple[list, list, list]:
-    """Single inference pass. If flip=True, uses ultralytics built-in TTA (augment=True).
+                     max_det: int, ult_tta: bool, device: int = 0) -> tuple[list, list, list]:
+    """Single inference pass. If ult_tta=True, uses ultralytics built-in TTA
+    (augment=True ≈ 3 internal scales + flip → ~4× forward passes). DO NOT
+    confuse this with horizontal flip alone.
 
     Returns: (xyxy_list, cls_list, conf_list) in original-image pixel coords.
     """
     res = model.predict(source=img_path, imgsz=imgsz, conf=conf, max_det=max_det,
-                        device=device, verbose=False, half=True, augment=flip)
+                        device=device, verbose=False, half=True, augment=ult_tta)
     boxes = res[0].boxes
     xyxy = boxes.xyxy.cpu().tolist() if boxes is not None else []
     cls = boxes.cls.cpu().tolist() if boxes is not None else []
@@ -200,7 +213,7 @@ def predict_all(
     fname_to_id: dict[str, int],
     idx_to_cat: dict[int, int],
     imgsz: int,
-    flip: bool,
+    ult_tta: bool,
     scales: list[int] | None,
     max_det: int,
     conf: float,
@@ -228,7 +241,7 @@ def predict_all(
         sz_list = scales if scales else [imgsz]
         for sz in sz_list:
             for m_idx, model in enumerate(models):
-                xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, flip)
+                xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, ult_tta)
                 if xyxy:
                     all_xyxy.append(xyxy)
                     all_cls.append(cls)
@@ -238,7 +251,7 @@ def predict_all(
         # Merge
         if len(all_xyxy) == 0:
             continue
-        if len(all_xyxy) == 1 and not flip:
+        if len(all_xyxy) == 1 and not ult_tta:
             xyxy, cls, conf_list = all_xyxy[0], all_cls[0], all_conf[0]
         else:
             if img_path.name not in sizes_cache:
@@ -308,7 +321,7 @@ def main() -> None:
     # Apply mode preset, allow override by explicit flags
     preset = MODES[args.mode]
     imgsz = args.imgsz if args.imgsz else preset["imgsz"]
-    flip = args.tta_flip if args.tta_flip else preset["flip"]
+    ult_tta = args.tta_flip if args.tta_flip else preset["ult_tta"]
     scales = args.tta_scales if args.tta_scales else preset["scales"]
     max_det = args.max_det if args.max_det else preset["max_det"]
 
@@ -332,10 +345,10 @@ def main() -> None:
               file=sys.stderr)
         sys.exit(1)
 
-    print(f"Mode: {args.mode} | imgsz={imgsz} flip={flip} scales={scales} max_det={max_det}",
+    print(f"Mode: {args.mode} | imgsz={imgsz} ult_tta={ult_tta} scales={scales} max_det={max_det}",
           file=sys.stderr)
     print(f"Models: {model_paths} weights={model_weights or 'unit'}", file=sys.stderr)
-    if (flip or scales or len(model_paths) > 1) and not HAS_WBF:
+    if (ult_tta or scales or len(model_paths) > 1) and not HAS_WBF:
         print("WARNING: ensemble_boxes not installed, falling back to concat (may degrade mAP)",
               file=sys.stderr)
 
@@ -356,7 +369,7 @@ def main() -> None:
     # Run
     t0 = time.time()
     preds = predict_all(models, img_paths, fname_to_id, idx_to_cat,
-                        imgsz=imgsz, flip=flip, scales=scales, max_det=max_det,
+                        imgsz=imgsz, ult_tta=ult_tta, scales=scales, max_det=max_det,
                         conf=args.confidence, wbf_iou=args.wbf_iou,
                         model_weights=model_weights)
 
