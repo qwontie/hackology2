@@ -30,17 +30,30 @@ from ultralytics import YOLO
 
 def run_val_inference(weights: str, val_images_dir: Path, imgsz: int,
                        device: int = 0, conf: float = 0.001):
-    """Run YOLO on every val image, return list of (image_path, result) pairs."""
+    """Run YOLO on every val image one-by-one (avoids 'too many open files')."""
+    import resource
+    try:
+        soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+        resource.setrlimit(resource.RLIMIT_NOFILE, (min(hard, 32768), hard))
+    except Exception:
+        pass
+
     model = YOLO(weights)
     img_paths = sorted(val_images_dir.glob("*.jpg")) + sorted(val_images_dir.glob("*.png"))
     print(f"[infer] {len(img_paths)} val images, imgsz={imgsz}, conf={conf}")
 
-    results = model.predict(
-        source=[str(p) for p in img_paths],
-        imgsz=imgsz, conf=conf, iou=0.5, max_det=400,
-        device=device, augment=False, verbose=False, stream=True,
-    )
-    return list(zip(img_paths, results))
+    pairs = []
+    for i, p in enumerate(img_paths):
+        # one image per predict call → ultralytics opens only one file at a time
+        res = model.predict(
+            source=str(p),
+            imgsz=imgsz, conf=conf, iou=0.5, max_det=400,
+            device=device, augment=False, verbose=False, stream=False,
+        )
+        pairs.append((p, res[0]))
+        if (i + 1) % 100 == 0:
+            print(f"[infer] {i + 1}/{len(img_paths)}")
+    return pairs
 
 
 def main() -> None:
