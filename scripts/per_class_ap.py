@@ -77,6 +77,10 @@ def main() -> None:
     coco_gt = COCO(str(val_ann_path))
     cats = coco_gt.loadCats(coco_gt.getCatIds())
     cat_id_to_name = {c["id"]: c["name"] for c in cats}
+    # YOLO outputs 0-indexed class indices. COCO annotations are 1-indexed
+    # category_ids in our dataset (verified: cat_id 1 == YAML idx 0). Build the
+    # mapping from name (YAML is source of truth) so we don't assume offset.
+    name_to_coco_id = {c["name"]: c["id"] for c in cats}
 
     # File name -> image_id from val annotations
     filename_to_image_id = {img["file_name"]: img["id"] for img in coco_gt.loadImgs(coco_gt.getImgIds())}
@@ -98,6 +102,11 @@ def main() -> None:
     img_results = run_val_inference(args.weights, val_imgs_dir,
                                      imgsz=args.imgsz, device=args.device)
 
+    # Build YOLO-idx -> COCO-cat-id map from the loaded model's name table
+    # (ultralytics exposes model.names as {idx: name}). Falls back to +1 if
+    # name lookup fails.
+    yolo_idx_to_coco_id = {}
+
     detections = []
     missing_files = 0
     for img_path, res in img_results:
@@ -106,6 +115,14 @@ def main() -> None:
             missing_files += 1
             continue
         image_id = filename_to_image_id[fname]
+        if not yolo_idx_to_coco_id and getattr(res, "names", None):
+            for idx, nm in res.names.items():
+                if nm in name_to_coco_id:
+                    yolo_idx_to_coco_id[int(idx)] = name_to_coco_id[nm]
+                else:
+                    yolo_idx_to_coco_id[int(idx)] = int(idx) + 1  # fallback
+            print(f"[map] built yolo-idx -> coco-cat-id map, {len(yolo_idx_to_coco_id)} entries; "
+                  f"sample: 0 -> {yolo_idx_to_coco_id.get(0)}  1 -> {yolo_idx_to_coco_id.get(1)}")
         if res.boxes is None or len(res.boxes) == 0:
             continue
         boxes_xyxy = res.boxes.xyxy.cpu().numpy()
@@ -115,9 +132,10 @@ def main() -> None:
             w, h = float(x2 - x1), float(y2 - y1)
             if w < 1 or h < 1:
                 continue
+            coco_cat = yolo_idx_to_coco_id.get(int(k), int(k) + 1)
             detections.append({
                 "image_id": int(image_id),
-                "category_id": int(k),
+                "category_id": int(coco_cat),
                 "bbox": [float(x1), float(y1), w, h],
                 "score": float(c),
             })
