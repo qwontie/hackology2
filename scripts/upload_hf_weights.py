@@ -39,6 +39,7 @@ FILES: dict[Path, str] = {
     ROOT / "data_probe/weights/new_models/y11l_1536_best.pt":       "y11l_1536_best.pt",
     ROOT / "data_probe/weights/new_models/yolo11x_v2_best.pt":      "yolo11x_v2_best.pt",
     ROOT / "data_probe/weights/new_models/yolov8x_cb_best.pt":      "yolov8x_cb_best.pt",
+    ROOT / "data_probe/weights/new_models/yolov10x_v1_best.pt":     "yolov10x_v1_best.pt",
 }
 
 
