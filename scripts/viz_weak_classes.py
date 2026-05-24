@@ -60,7 +60,7 @@ def main() -> None:
     weak = diag["per_class"][:args.topk]
     target_images = set()
     for r in weak:
-        for wi in r["worst_val_images"]:
+        for wi in r.get("worst_val_images", []):
             target_images.add(wi["file"])
     print(f"[plan] {len(weak)} weak classes × ~{args.per_class_imgs} images = "
           f"{len(target_images)} unique images to re-infer")
@@ -121,7 +121,7 @@ def main() -> None:
             "val_n": r["val_n"],
             "imgs": [],
         }
-        for wi in r["worst_val_images"][:args.per_class_imgs]:
+        for wi in r.get("worst_val_images", [])[:args.per_class_imgs]:
             fname = wi["file"]
             src = val_images_dir / fname
             if not src.exists():

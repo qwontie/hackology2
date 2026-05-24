@@ -172,7 +172,8 @@ def main() -> None:
     report.sort(key=lambda x: x["ap50"])  # worst first
 
     # --- 5. For weak classes, find worst val images (most GT, no/few predictions)
-    weak = report[:args.topk_weak]
+    # Fill worst_val_images for ALL classes (cheap), so downstream viz can use any topk.
+    weak = report
     img_pred_count = defaultdict(lambda: defaultdict(int))  # img_id -> cat_id -> #preds
     for d in detections:
         img_pred_count[d["image_id"]][d["category_id"]] += 1
