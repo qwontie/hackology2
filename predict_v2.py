@@ -49,6 +49,15 @@ from pathlib import Path
 import torch
 from ultralytics import YOLO, RTDETR
 
+# Optional sibling-copy postprocess (codex V3 — targets 1L/700ml/500ml SKU confusions).
+# Enable with --sibling-copy or PREDICT_SIBLING_COPY=1. Adds shadow preds at a
+# discounted score for known sibling pairs; mAP gain ~+0.004 from 3 weak classes.
+try:
+    from scripts.sibling_copy import apply_sibling_copy
+    HAS_SIBLING = True
+except ImportError:
+    HAS_SIBLING = False
+
 
 # ---------- weight registry: short names -> GH Release URLs ----------
 WEIGHTS_RELEASE = "https://github.com/qwontie/hackology2/releases/download/v0-weights"
@@ -316,6 +325,10 @@ def main() -> None:
     p.add_argument("--max-det", type=int)
     p.add_argument("--model-weights", type=float, nargs="+",
                    help="Per-model weights for WBF (default: all 1.0, or set PREDICT_MODEL_WEIGHTS env)")
+    p.add_argument("--sibling-copy", action="store_true",
+                   default=os.environ.get("PREDICT_SIBLING_COPY") == "1",
+                   help="Apply sibling-class shadow postprocess (codex V3 targeted 1L/700ml fix). "
+                        "Default from PREDICT_SIBLING_COPY env.")
     args = p.parse_args()
 
     # Apply mode preset, allow override by explicit flags
@@ -372,6 +385,16 @@ def main() -> None:
                         imgsz=imgsz, ult_tta=ult_tta, scales=scales, max_det=max_det,
                         conf=args.confidence, wbf_iou=args.wbf_iou,
                         model_weights=model_weights)
+
+    if args.sibling_copy:
+        if not HAS_SIBLING:
+            print("WARNING: --sibling-copy requested but scripts/sibling_copy.py not importable",
+                  file=sys.stderr)
+        else:
+            before = len(preds)
+            preds, sib_stats = apply_sibling_copy(preds)
+            print(f"sibling-copy: {before:,} -> {len(preds):,} (+{sib_stats['added_total']:,}) "
+                  f"by_pair={sib_stats['by_pair']}", file=sys.stderr)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(preds))
