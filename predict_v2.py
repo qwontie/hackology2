@@ -304,7 +304,9 @@ def predict_all(
                 continue
             # WBF can sum weighted scores from overlapping models -> >1.0.
             # Eval validator requires score in (0, 1], clip the upper end.
-            score = min(max(float(conf_list[k]), 1e-6), 1.0)
+            # Floor at 1e-4 — anything lower round(_, 4) collapses to 0.0
+            # and the validator rejects score=0 entries.
+            score = min(max(float(conf_list[k]), 1e-4), 1.0)
             preds.append({
                 "image_id": image_id,
                 "category_id": cat_id,
