@@ -53,7 +53,9 @@ def main() -> None:
 
     diag = json.loads(Path(args.diag).read_text())
     coco_gt = COCO(args.val_ann)
-    cat_id_to_name = {c["id"]: c["name"] for c in coco_gt.loadCats(coco_gt.getCatIds())}
+    cats = coco_gt.loadCats(coco_gt.getCatIds())
+    cat_id_to_name = {c["id"]: c["name"] for c in cats}
+    name_to_coco_id = {c["name"]: c["id"] for c in cats}
 
     weak = diag["per_class"][:args.topk]
     target_images = set()
@@ -74,6 +76,12 @@ def main() -> None:
         imgsz=args.imgsz, conf=0.001, iou=0.5, max_det=400,
         device=0, augment=False, verbose=False, stream=False,
     )
+    # Build yolo-idx -> coco-cat-id map from model name table (matches per_class_ap.py)
+    yolo_idx_to_coco_id = {}
+    if results and getattr(results[0], "names", None):
+        for idx, nm in results[0].names.items():
+            yolo_idx_to_coco_id[int(idx)] = name_to_coco_id.get(nm, int(idx) + 1)
+
     preds_by_file = {}
     for p, r in zip(img_paths, results):
         if r.boxes is None:
@@ -84,7 +92,8 @@ def main() -> None:
         clses = r.boxes.cls.cpu().numpy().astype(int)
         preds_by_file[p.name] = [
             {"bbox": [float(x1), float(y1), float(x2 - x1), float(y2 - y1)],
-             "score": float(c), "cat_id": int(k)}
+             "score": float(c),
+             "cat_id": yolo_idx_to_coco_id.get(int(k), int(k) + 1)}
             for (x1, y1, x2, y2), c, k in zip(boxes_xyxy, confs, clses)
         ]
 
