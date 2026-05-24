@@ -57,7 +57,11 @@ WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
 
 # Finals invocation has no flags — `uv run predict --input ... --annotations ... --output ...`.
 # These env vars (or hardcoded fallbacks) decide what runs in production.
-DEFAULT_MODE = os.environ.get("PREDICT_MODE", "heavy")
+# Default mode is `balanced` (1536+flip per model), not `heavy`. T4 smoke test
+# at 2026-05-24 02:30 measured heavy 2-model = 35 min, OVER the 30-min finals
+# budget. balanced 2-model = ~12 min, safe headroom. Override with PREDICT_MODE=heavy
+# only if you've actually re-profiled on the target box.
+DEFAULT_MODE = os.environ.get("PREDICT_MODE", "balanced")
 DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher").split()
 DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "")  # e.g. "2 1 0.5"
 
@@ -256,11 +260,14 @@ def predict_all(
             cat_id = idx_to_cat.get(int(cls[k]))
             if cat_id is None:
                 continue
+            # WBF can sum weighted scores from overlapping models -> >1.0.
+            # Eval validator requires score in (0, 1], clip the upper end.
+            score = min(max(float(conf_list[k]), 1e-6), 1.0)
             preds.append({
                 "image_id": image_id,
                 "category_id": cat_id,
                 "bbox": [round(x1, 2), round(y1, 2), round(bw, 2), round(bh, 2)],
-                "score": round(float(conf_list[k]), 4),
+                "score": round(score, 4),
             })
 
         if (i + 1) % 50 == 0:
