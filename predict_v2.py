@@ -73,7 +73,7 @@ WEIGHT_ALIASES = {
     "teacher":       f"{WEIGHTS_RELEASE}/teacher_x_1536_all_best.pt",
     "teacher_dprft": f"{WEIGHTS_RELEASE}/teacher_x_1536_dprft_best.pt",
     "yolov8l":       f"{WEIGHTS_RELEASE}/yolov8l_train1_best.pt",
-    "yolo11l":       f"{WEIGHTS_RELEASE}/yolo11l_student_best.pt",
+    "yolo11l":       f"{WEIGHTS_RELEASE}/y11l_1536_best.pt",
     "rtdetr":        f"{WEIGHTS_RELEASE}/rtdetr_l_best.pt",
     # +0.0074 diversity hero (4-model champion 0.8116 -> public LB):
     "yolo11x_v2":    f"{WEIGHTS_RELEASE}/yolo11x_v2_best.pt",

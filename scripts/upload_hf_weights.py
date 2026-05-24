@@ -36,7 +36,7 @@ FILES: dict[Path, str] = {
     # 5-model champion ensemble (public LB 0.8172)
     ROOT / "_weights" / "student_m_1536_cwd_best.pt":               "student_m_1536_cwd_best.pt",
     ROOT / "_weights" / "teacher_x_1536_all_best.pt":               "teacher_x_1536_all_best.pt",
-    ROOT / "data_probe/weights/new_models/_yolo11l_student_best.pt": "yolo11l_student_best.pt",
+    ROOT / "data_probe/weights/new_models/y11l_1536_best.pt":       "y11l_1536_best.pt",
     ROOT / "data_probe/weights/new_models/yolo11x_v2_best.pt":      "yolo11x_v2_best.pt",
     ROOT / "data_probe/weights/new_models/yolov8x_cb_best.pt":      "yolov8x_cb_best.pt",
 }
