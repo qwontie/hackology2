@@ -40,6 +40,8 @@ FILES: dict[Path, str] = {
     ROOT / "data_probe/weights/new_models/yolo11x_v2_best.pt":      "yolo11x_v2_best.pt",
     ROOT / "data_probe/weights/new_models/yolov8x_cb_best.pt":      "yolov8x_cb_best.pt",
     ROOT / "data_probe/weights/new_models/yolov10x_v1_best.pt":     "yolov10x_v1_best.pt",
+    # +0.0014 7m diversity hit (champion 0.8293 → public LB):
+    ROOT / "data_probe/weights/new_models/yolov9c_v1_best.pt":      "yolov9c_v1_best.pt",
 }
 
 

@@ -81,6 +81,8 @@ WEIGHT_ALIASES = {
     "yolov8x_cb":    f"{WEIGHTS_RELEASE}/yolov8x_cb_best.pt",
     # +0.0097 BIG arch-novelty hit (6-model champion 0.8279 -> public LB):
     "yolov10x":      f"{WEIGHTS_RELEASE}/yolov10x_v1_best.pt",
+    # +0.0014 PGI family diversity (7-model champion 0.8293 -> public LB):
+    "yolov9c":       f"{WEIGHTS_RELEASE}/yolov9c_v1_best.pt",
 }
 WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
 
@@ -91,10 +93,11 @@ WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
 # budget. balanced 2-model = ~12 min, safe headroom. Override with PREDICT_MODE=heavy
 # only if you've actually re-profiled on the target box.
 DEFAULT_MODE = os.environ.get("PREDICT_MODE", "semiheavy")
-# 5-model public-LB champion @ 0.8172. Each addition was verified +δ:
-#   student+teacher baseline, +yolo11l (+0.017), +yolo11x_v2 (+0.0074), +yolov8x_cb (+0.0056).
-DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher yolo11l yolo11x_v2 yolov8x_cb yolov10x").split()
-DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "1.0 1.5 0.7 0.5 0.5 0.5")
+# 7-model public-LB champion @ 0.8293. Each addition was verified +δ on LB:
+#   s+t baseline → +yolo11l (+0.017) → +yolo11x_v2 (+0.0074) → +yolov8x_cb (+0.0056)
+#   → +yolov10x (+0.0097, NMS-free arch novelty) → +yolov9c (+0.0014, PGI family).
+DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher yolo11l yolo11x_v2 yolov8x_cb yolov10x yolov9c").split()
+DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "1.0 1.5 0.7 0.5 0.5 0.5 0.4")
 
 
 def is_rtdetr_weight(name_or_path: str) -> bool:
