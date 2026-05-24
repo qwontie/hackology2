@@ -177,15 +177,21 @@ def boxes_to_normalized(boxes_xyxy, img_w: int, img_h: int):
 
 
 def predict_one_pass(model: YOLO, img_path: str, imgsz: int, conf: float,
-                     max_det: int, ult_tta: bool, device: int = 0) -> tuple[list, list, list]:
+                     max_det: int, ult_tta: bool, nms_iou: float = 0.7,
+                     device: int = 0) -> tuple[list, list, list]:
     """Single inference pass. If ult_tta=True, uses ultralytics built-in TTA
     (augment=True ≈ 3 internal scales + flip → ~4× forward passes). DO NOT
     confuse this with horizontal flip alone.
 
+    nms_iou: ultralytics NMS IoU threshold for per-model dedup BEFORE WBF.
+    Default 0.7 = ultralytics default. Higher (0.85-0.90) keeps more candidates
+    for WBF — codex says this matters more than wbf_iou tuning alone.
+
     Returns: (xyxy_list, cls_list, conf_list) in original-image pixel coords.
     """
     res = model.predict(source=img_path, imgsz=imgsz, conf=conf, max_det=max_det,
-                        device=device, verbose=False, half=True, augment=ult_tta)
+                        iou=nms_iou, device=device, verbose=False, half=True,
+                        augment=ult_tta)
     boxes = res[0].boxes
     xyxy = boxes.xyxy.cpu().tolist() if boxes is not None else []
     cls = boxes.cls.cpu().tolist() if boxes is not None else []
@@ -227,6 +233,7 @@ def predict_all(
     max_det: int,
     conf: float,
     wbf_iou: float,
+    nms_iou: float = 0.7,
     model_weights: list[float] | None = None,
     score_power: float = 1.0,
 ) -> list[dict]:
@@ -255,7 +262,7 @@ def predict_all(
         sz_list = scales if scales else [imgsz]
         for sz in sz_list:
             for m_idx, model in enumerate(models):
-                xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, ult_tta)
+                xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, ult_tta, nms_iou=nms_iou)
                 if xyxy:
                     if score_power != 1.0:
                         cf = [c ** score_power for c in cf]
@@ -329,6 +336,11 @@ def main() -> None:
     p.add_argument("--tta-flip", action="store_true")
     p.add_argument("--tta-scales", type=int, nargs="+")
     p.add_argument("--wbf-iou", type=float, default=0.55)
+    p.add_argument("--nms-iou", type=float,
+                   default=float(os.environ.get("PREDICT_NMS_IOU", "0.7")),
+                   help="Ultralytics NMS IoU for per-model dedup BEFORE WBF. "
+                        "Codex: 0.85 serious candidate, 0.90 worth probe. "
+                        "Higher = more candidates fed to WBF.")
     p.add_argument("--max-det", type=int)
     p.add_argument("--model-weights", type=float, nargs="+",
                    help="Per-model weights for WBF (default: all 1.0, or set PREDICT_MODEL_WEIGHTS env)")
@@ -396,7 +408,7 @@ def main() -> None:
     t0 = time.time()
     preds = predict_all(models, img_paths, fname_to_id, idx_to_cat,
                         imgsz=imgsz, ult_tta=ult_tta, scales=scales, max_det=max_det,
-                        conf=args.confidence, wbf_iou=args.wbf_iou,
+                        conf=args.confidence, wbf_iou=args.wbf_iou, nms_iou=args.nms_iou,
                         model_weights=model_weights, score_power=args.score_power)
 
     if args.sibling_copy:

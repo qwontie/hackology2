@@ -30,6 +30,9 @@ def main() -> None:
     ap.add_argument("--val-anno", required=True)
     ap.add_argument("--imgsz", type=int, default=1536)
     ap.add_argument("--conf", type=float, default=0.001)
+    ap.add_argument("--iou", type=float, default=0.90,
+                    help="Ultralytics NMS IoU. Codex: 0.85 serious candidate, 0.90 worth sweep. "
+                         "Cache at 0.90 (most permissive) so WBF sees max candidates.")
     ap.add_argument("--max-det", type=int, default=600)
     ap.add_argument("--device", default="0")
     ap.add_argument("--out-dir", default="/tmp/val_preds_cache")
@@ -51,7 +54,7 @@ def main() -> None:
     # search must translate using the same convention as predict_v2.
     for wp in args.weights:
         name = Path(wp).stem
-        out_file = out / f"{name}__imgsz{args.imgsz}.jsonl"
+        out_file = out / f"{name}__imgsz{args.imgsz}_iou{int(args.iou*100)}.jsonl"
         if out_file.exists():
             print(f"[skip] {out_file} already exists")
             continue
@@ -61,7 +64,7 @@ def main() -> None:
         with out_file.open("w") as f:
             for i, p in enumerate(img_paths):
                 res = model.predict(source=str(p), imgsz=args.imgsz, conf=args.conf,
-                                    max_det=args.max_det, device=args.device,
+                                    iou=args.iou, max_det=args.max_det, device=args.device,
                                     verbose=False, half=True)
                 boxes = res[0].boxes
                 if boxes is None:
