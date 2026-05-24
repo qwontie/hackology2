@@ -39,7 +39,7 @@ import urllib.request
 from pathlib import Path
 
 import torch
-from ultralytics import YOLO
+from ultralytics import YOLO, RTDETR
 
 
 # ---------- weight registry: short names -> GH Release URLs ----------
@@ -48,8 +48,30 @@ WEIGHT_ALIASES = {
     "student":       f"{WEIGHTS_RELEASE}/student_m_1536_cwd_best.pt",
     "teacher":       f"{WEIGHTS_RELEASE}/teacher_x_1536_all_best.pt",
     "teacher_dprft": f"{WEIGHTS_RELEASE}/teacher_x_1536_dprft_best.pt",
+    # uploaded after training finishes (auto-download once GH Release has them):
+    "yolov8l":       f"{WEIGHTS_RELEASE}/yolov8l_train1_best.pt",
+    "yolo11l":       f"{WEIGHTS_RELEASE}/yolo11l_student_best.pt",
+    "rtdetr":        f"{WEIGHTS_RELEASE}/rtdetr_l_best.pt",
 }
 WEIGHTS_CACHE_DIR = Path(os.environ.get("WEIGHTS_CACHE_DIR", "_weights"))
+
+# Finals invocation has no flags — `uv run predict --input ... --annotations ... --output ...`.
+# These env vars (or hardcoded fallbacks) decide what runs in production.
+DEFAULT_MODE = os.environ.get("PREDICT_MODE", "heavy")
+DEFAULT_MODELS = os.environ.get("PREDICT_MODELS", "student teacher").split()
+DEFAULT_MODEL_WEIGHTS_ENV = os.environ.get("PREDICT_MODEL_WEIGHTS", "")  # e.g. "2 1 0.5"
+
+
+def is_rtdetr_weight(name_or_path: str) -> bool:
+    """Detect rtdetr by alias or filename — they need the RTDETR class, not YOLO."""
+    return "rtdetr" in name_or_path.lower()
+
+
+def load_model(path: str):
+    """Pick the right ultralytics class so loss/inference paths are correct."""
+    if is_rtdetr_weight(path):
+        return RTDETR(path)
+    return YOLO(path)
 
 
 def resolve_weight(name_or_path: str) -> str:
@@ -169,7 +191,7 @@ def wbf_merge(all_xyxy: list[list], all_cls: list[list], all_conf: list[list],
 
 
 def predict_all(
-    models: list[YOLO],
+    models: list,
     img_paths: list[Path],
     fname_to_id: dict[str, int],
     idx_to_cat: dict[int, int],
@@ -179,8 +201,13 @@ def predict_all(
     max_det: int,
     conf: float,
     wbf_iou: float,
+    model_weights: list[float] | None = None,
 ) -> list[dict]:
-    """Main inference loop with memory cleanup every 50 imgs."""
+    """Main inference loop with memory cleanup every 50 imgs.
+
+    model_weights: per-MODEL weights, broadcast across scales when WBF-fusing.
+    None == all weights = 1.
+    """
     preds = []
     t0 = time.time()
     # Get image sizes lazily for WBF normalization
@@ -193,15 +220,16 @@ def predict_all(
             continue
 
         # All passes for this image
-        all_xyxy, all_cls, all_conf = [], [], []
+        all_xyxy, all_cls, all_conf, pass_weights = [], [], [], []
         sz_list = scales if scales else [imgsz]
         for sz in sz_list:
-            for model in models:
+            for m_idx, model in enumerate(models):
                 xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, flip)
                 if xyxy:
                     all_xyxy.append(xyxy)
                     all_cls.append(cls)
                     all_conf.append(cf)
+                    pass_weights.append(model_weights[m_idx] if model_weights else 1.0)
 
         # Merge
         if len(all_xyxy) == 0:
@@ -213,7 +241,10 @@ def predict_all(
                 with Image.open(img_path) as im:
                     sizes_cache[img_path.name] = im.size  # (W, H)
             w, h = sizes_cache[img_path.name]
-            xyxy, cls, conf_list = wbf_merge(all_xyxy, all_cls, all_conf, w, h, wbf_iou)
+            xyxy, cls, conf_list = wbf_merge(
+                all_xyxy, all_cls, all_conf, w, h, wbf_iou,
+                weights=pass_weights,
+            )
 
         # Emit COCO entries with degenerate-bbox protection
         for k in range(len(xyxy)):
@@ -256,37 +287,54 @@ def main() -> None:
                    help="Minimum confidence (default: 0.001, low for mAP)")
     p.add_argument("--taxonomy", type=Path, default=Path("taxonomy.json"))
     p.add_argument("--annotations", type=Path, default=Path("test_images.json"))
-    p.add_argument("--mode", choices=list(MODES.keys()),
-                   help="Preset profile (overrides --imgsz/--tta-* unless specified)")
+    p.add_argument("--mode", choices=list(MODES.keys()), default=DEFAULT_MODE,
+                   help=f"Preset profile (default from PREDICT_MODE env or '{DEFAULT_MODE}')")
     p.add_argument("--imgsz", type=int)
     p.add_argument("--tta-flip", action="store_true")
     p.add_argument("--tta-scales", type=int, nargs="+")
     p.add_argument("--wbf-iou", type=float, default=0.55)
     p.add_argument("--max-det", type=int)
+    p.add_argument("--model-weights", type=float, nargs="+",
+                   help="Per-model weights for WBF (default: all 1.0, or set PREDICT_MODEL_WEIGHTS env)")
     args = p.parse_args()
 
     # Apply mode preset, allow override by explicit flags
-    preset = MODES[args.mode] if args.mode else {"imgsz": 1536, "flip": False,
-                                                   "scales": None, "max_det": 300}
+    preset = MODES[args.mode]
     imgsz = args.imgsz if args.imgsz else preset["imgsz"]
     flip = args.tta_flip if args.tta_flip else preset["flip"]
     scales = args.tta_scales if args.tta_scales else preset["scales"]
     max_det = args.max_det if args.max_det else preset["max_det"]
 
-    # Models
-    model_paths = args.models or ([args.model] if args.model else [])
+    # Models — fall back to env-configured defaults so finals (no flags) just works
+    model_paths = args.models or ([args.model] if args.model else None) or DEFAULT_MODELS
     if not model_paths:
-        print("ERROR: provide --model or --models", file=sys.stderr); sys.exit(1)
-    print(f"Mode: {args.mode or 'custom'} | imgsz={imgsz} flip={flip} scales={scales} max_det={max_det}",
+        print("ERROR: no models specified and PREDICT_MODELS env is empty", file=sys.stderr)
+        sys.exit(1)
+
+    # Per-model WBF weights (CLI > env > all 1.0)
+    model_weights = args.model_weights
+    if model_weights is None and DEFAULT_MODEL_WEIGHTS_ENV:
+        try:
+            model_weights = [float(x) for x in DEFAULT_MODEL_WEIGHTS_ENV.split()]
+        except ValueError:
+            print(f"WARNING: bad PREDICT_MODEL_WEIGHTS='{DEFAULT_MODEL_WEIGHTS_ENV}', using unit weights",
+                  file=sys.stderr)
+            model_weights = None
+    if model_weights and len(model_weights) != len(model_paths):
+        print(f"ERROR: --model-weights has {len(model_weights)} entries but {len(model_paths)} models",
+              file=sys.stderr)
+        sys.exit(1)
+
+    print(f"Mode: {args.mode} | imgsz={imgsz} flip={flip} scales={scales} max_det={max_det}",
           file=sys.stderr)
-    print(f"Models: {model_paths}", file=sys.stderr)
+    print(f"Models: {model_paths} weights={model_weights or 'unit'}", file=sys.stderr)
     if (flip or scales or len(model_paths) > 1) and not HAS_WBF:
         print("WARNING: ensemble_boxes not installed, falling back to concat (may degrade mAP)",
               file=sys.stderr)
 
-    resolved_paths = [resolve_weight(p) for p in model_paths]
+    resolved_paths = [resolve_weight(pth) for pth in model_paths]
     print(f"Resolved: {resolved_paths}", file=sys.stderr)
-    models = [YOLO(p) for p in resolved_paths]
+    models = [load_model(pth) for pth in resolved_paths]
 
     # Image discovery
     exts = {".jpg", ".jpeg", ".png", ".bmp", ".tiff"}
@@ -302,7 +350,8 @@ def main() -> None:
     t0 = time.time()
     preds = predict_all(models, img_paths, fname_to_id, idx_to_cat,
                         imgsz=imgsz, flip=flip, scales=scales, max_det=max_det,
-                        conf=args.confidence, wbf_iou=args.wbf_iou)
+                        conf=args.confidence, wbf_iou=args.wbf_iou,
+                        model_weights=model_weights)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(preds))
