@@ -228,11 +228,16 @@ def predict_all(
     conf: float,
     wbf_iou: float,
     model_weights: list[float] | None = None,
+    score_power: float = 1.0,
 ) -> list[dict]:
     """Main inference loop with memory cleanup every 50 imgs.
 
     model_weights: per-MODEL weights, broadcast across scales when WBF-fusing.
     None == all weights = 1.
+    score_power: gamma applied to each pred's score BEFORE WBF. <1.0 boosts
+    low-conf preds asymmetrically (e.g. 0.6 maps 0.001->0.016, 0.5->0.66,
+    0.9->0.94). Rank-changing in WBF context — can rescue low-conf TPs that
+    skip_box_thr would otherwise drop. 1.0 = no-op.
     """
     preds = []
     t0 = time.time()
@@ -252,6 +257,8 @@ def predict_all(
             for m_idx, model in enumerate(models):
                 xyxy, cls, cf = predict_one_pass(model, str(img_path), sz, conf, max_det, ult_tta)
                 if xyxy:
+                    if score_power != 1.0:
+                        cf = [c ** score_power for c in cf]
                     all_xyxy.append(xyxy)
                     all_cls.append(cls)
                     all_conf.append(cf)
@@ -329,6 +336,11 @@ def main() -> None:
                    default=os.environ.get("PREDICT_SIBLING_COPY") == "1",
                    help="Apply sibling-class shadow postprocess (codex V3 targeted 1L/700ml fix). "
                         "Default from PREDICT_SIBLING_COPY env.")
+    p.add_argument("--score-power", type=float,
+                   default=float(os.environ.get("PREDICT_SCORE_POWER", "1.0")),
+                   help="Gamma applied to per-model scores BEFORE WBF (default 1.0 = no-op). "
+                        "0.5-0.7 boosts low-conf preds asymmetrically and reranks WBF fusion. "
+                        "Env: PREDICT_SCORE_POWER.")
     args = p.parse_args()
 
     # Apply mode preset, allow override by explicit flags
@@ -360,7 +372,8 @@ def main() -> None:
 
     print(f"Mode: {args.mode} | imgsz={imgsz} ult_tta={ult_tta} scales={scales} max_det={max_det}",
           file=sys.stderr)
-    print(f"Models: {model_paths} weights={model_weights or 'unit'}", file=sys.stderr)
+    print(f"Models: {model_paths} weights={model_weights or 'unit'} score_power={args.score_power}",
+          file=sys.stderr)
     if (ult_tta or scales or len(model_paths) > 1) and not HAS_WBF:
         print("WARNING: ensemble_boxes not installed, falling back to concat (may degrade mAP)",
               file=sys.stderr)
@@ -384,7 +397,7 @@ def main() -> None:
     preds = predict_all(models, img_paths, fname_to_id, idx_to_cat,
                         imgsz=imgsz, ult_tta=ult_tta, scales=scales, max_det=max_det,
                         conf=args.confidence, wbf_iou=args.wbf_iou,
-                        model_weights=model_weights)
+                        model_weights=model_weights, score_power=args.score_power)
 
     if args.sibling_copy:
         if not HAS_SIBLING:
