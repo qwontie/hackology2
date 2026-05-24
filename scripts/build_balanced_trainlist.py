@@ -112,7 +112,7 @@ def main() -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(lines) + "\n")
     print(f"[write] {len(lines):,} entries -> {out}")
-    print(f"[reps hist] {dict(sorted(rep_hist.items()))[:20] if rep_hist else {}}")
+    print(f"[reps hist] {dict(list(sorted(rep_hist.items()))[:20])}")
     print(f"[boost] hits by class: {dict(boost_hits)}")
     print(f"[rarest 5 classes] " + ", ".join(
         f"cls{c}:{counts[c]}" for c, _ in counts.most_common()[:-6:-1]))
