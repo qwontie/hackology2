@@ -59,13 +59,19 @@ except ImportError:
     HAS_SIBLING = False
 
 
-# ---------- weight registry: short names -> GH Release URLs ----------
-WEIGHTS_RELEASE = "https://github.com/qwontie/hackology2/releases/download/v0-weights"
+# ---------- weight registry: short names -> remote URLs ----------
+# WEIGHT_SOURCE picks the host. HF is the production target (PDF 7a recommends
+# HF for >100MB and the URL doesn't leak our messy source repo); GH stays as
+# emergency fallback while HF upload is in flight.
+_WEIGHT_HOSTS = {
+    "hf": "https://huggingface.co/qwontie/bottle-detector-weights/resolve/main",
+    "gh": "https://github.com/qwontie/hackology2/releases/download/v0-weights",
+}
+WEIGHTS_RELEASE = _WEIGHT_HOSTS[os.environ.get("WEIGHT_SOURCE", "gh").lower()]
 WEIGHT_ALIASES = {
     "student":       f"{WEIGHTS_RELEASE}/student_m_1536_cwd_best.pt",
     "teacher":       f"{WEIGHTS_RELEASE}/teacher_x_1536_all_best.pt",
     "teacher_dprft": f"{WEIGHTS_RELEASE}/teacher_x_1536_dprft_best.pt",
-    # uploaded after training finishes (auto-download once GH Release has them):
     "yolov8l":       f"{WEIGHTS_RELEASE}/yolov8l_train1_best.pt",
     "yolo11l":       f"{WEIGHTS_RELEASE}/yolo11l_student_best.pt",
     "rtdetr":        f"{WEIGHTS_RELEASE}/rtdetr_l_best.pt",

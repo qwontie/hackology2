@@ -300,3 +300,4 @@ vast_snapshot/yolo-distiller/ultralytics.egg-info/
 
 # Preserve training/eval logs that we backed up from vast
 !vast_snapshot/**/*.log
+final_repo/
